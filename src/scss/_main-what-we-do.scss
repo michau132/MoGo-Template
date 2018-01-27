@@ -1,0 +1,140 @@
+.main-what-we-do__row-6-12 {
+  max-height: 360px;
+  margin-bottom: 100px;
+}
+.main-what-we-do__row__col-6-12 {
+  height: 100%;
+}
+.main-what-we-do__row__col-6-12:last-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-what-we-do__row__col-6-12 img{
+  height: 100%;
+  display: block;
+}
+.main-what-we-do__row__col-6-12__metier {
+  margin-bottom: 20px;
+  border: 1px solid rgba($textColor, 0.5);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.main-what-we-do__row__col-6-12__metier.showed {
+  height: 230px;
+}
+.main-what-we-do__row__col-6-12__metier p {
+  font-family: $textFont;
+  font-style: italic;
+  color: $textColor;
+  margin: 15px 15px;
+  line-height: 25px;
+  overflow-y: scroll;
+  height: 160px;
+  padding-bottom: -25px;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+    color: $shadowColor;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $textColor;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $shadowColor;
+    border-radius: 10px;
+  }
+}
+.main-what-we-do__row__col-6-12__metier__title {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-row: unset;
+  border-bottom: 1px solid rgba($textColor, 0.5);
+  position: relative;
+
+  &:before {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    top: 25%;
+    left: 95%;
+    font-size: 25px;
+  }
+}
+.main-what-we-do__row__col-6-12__metier__title > .fa,
+.main-what-we-do__row__col-6-12__metier__title h5 {
+  line-height: 50px;
+}
+.main-what-we-do__row__col-6-12__metier__title > .fa {
+  color: $shadowColor;
+  font-size: 30px;
+  text-align: center;
+}
+.main-what-we-do__row__col-6-12__metier__title h5 {
+  font-family: $headerFont;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.fa-align-center {
+  transform: rotate(90deg);
+}
+
+.main-what-we-do__box {
+  background-color: #f8f8f8;
+}
+.main-what-we-do__quotation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 120px;
+}
+
+.main-what-we-do__quotation button {
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+.main-what-we-do__quotation button > .fa {
+  color: $textColor;
+}
+.main-what-we-do__quotation > .fa-comments {
+  color: $shadowColor;
+  font-size: 70px;
+  padding: 0 60px;
+}
+.main-what-we-do__quotation__text {
+  padding-right: 60px;
+  padding-left: 10px;
+}
+.main-what-we-do__quotation__text p {
+  font-family: $textFont;
+  color: $textColor;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+.main-what-we-do__quotation__text h6 {
+  font-family: $titleFont;
+  font-size: 20px;
+  position: relative;
+  padding-left: 40px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #f38181;
+  }
+}

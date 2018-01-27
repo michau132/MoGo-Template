@@ -1,3 +1,7 @@
-body {
-  background-color: #fff;
+.main-page {
+  min-height: 100vh;
+  background-image: $gradientColor,
+  url("./../images/main-page/eagle.jpg");
+  background-size: cover;
+  background-position-y: center;
 }

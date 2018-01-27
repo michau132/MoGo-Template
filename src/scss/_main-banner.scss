@@ -1,0 +1,33 @@
+.main-page__main-banner {
+  padding-top: 100px;
+  text-align: center;
+  color:$onGradientColor;
+}
+.main-page__main-banner-title {
+  font-family: $titleFont;
+  font-size: 50px;
+  padding-bottom: 55px;
+}
+.main-page__main-banner-header {
+  font-family: $headerFont;
+  font-weight: bold;
+  font-size: 100px;
+  padding-bottom: 80px;
+  position:relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 38px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 3px;
+    width: 50px;
+    background-color: $onGradientColor;
+  }
+}
+.main-page__main-banner-btn {
+  @include stylingLinks;
+  border: 2px solid $onGradientColor;
+  padding: 7px 15px;
+}

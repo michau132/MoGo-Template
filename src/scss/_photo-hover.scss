@@ -1,0 +1,10 @@
+.photo-hover {
+  background: $gradientColor;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left: 0;
+  box-shadow: 10px 10px 0px 0 #95e1d3;
+  color: $onGradientColor;
+}

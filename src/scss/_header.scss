@@ -1,0 +1,33 @@
+.header {
+  padding-top: 70px;
+  text-align: center;
+  padding-bottom: 70px;
+}
+.header__title {
+  font-family: $titleFont;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+.header__header {
+  font-family: $headerFont;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 70px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 33px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+  }
+}
+.header__text {
+  font-family: $textFont;
+  color: $textColor;
+}

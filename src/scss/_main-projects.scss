@@ -1,0 +1,148 @@
+.main-projects {
+  margin-bottom: 100px;
+}
+.main-projects__row-3-12 {
+  grid-gap: 0;
+  height: 600px;
+  margin-bottom: 80px;
+}
+.main-projects__row-3-12__col-3-12 {
+  height: 100%;
+}
+.main-projects__row-3-12__col-3-12__all-height {
+  height: 100%;
+}
+.main-projects__row-3-12__col-3-12__half-height {
+  height: 50%;
+}
+.main-projects__row-3-12__col-3-12__half-height-image-1,
+.main-projects__row-3-12__col-3-12__half-height-image-2,
+.main-projects__row-3-12__col-3-12__half-height-image-3,
+.main-projects__row-3-12__col-3-12__half-height-image-4 {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+.main-projects__row-3-12__col-3-12__half-height-image-6,
+.main-projects__row-3-12__col-3-12__half-height-image-7 {
+  height: 100%;
+  background-position: center 10%;
+  background-size: cover;
+  position: relative;
+}
+.main-projects__row-3-12__col-3-12__image-5 {
+  background-image: url("../images/our-projects/Bez-nazwy-6.jpg");
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.main-projects__row-3-12__col-3-12__half-height-image-6 {
+  background-image: url("../images/our-projects/Bez-nazwy-7.jpg");
+}
+.main-projects__row-3-12__col-3-12__half-height-image-7 {
+  background-image: url("../images/our-projects/Bez-nazwy-10.jpg");
+}
+.main-projects__row-3-12__col-3-12__half-height-image-1 {
+  background-image: url("../images/our-projects/Bez-nazwy-4.jpg");
+}
+.main-projects__row-3-12__col-3-12__half-height-image-2 {
+  background-image: url("../images/our-projects/Bez-nazwy-8.jpg");
+}
+.main-projects__row-3-12__col-3-12__half-height-image-3 {
+  background-image: url("../images/our-projects/Bez-nazwy-5.jpg");
+}
+.main-projects__row-3-12__col-3-12__half-height-image-4 {
+  background-image: url("../images/our-projects/Bez-nazwy-9.jpg");
+}
+.main-projects__row-3-12__col-3-12__photo-hover {
+  box-shadow: none;
+  color: $onGradientColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+.main-projects__row-3-12__col-3-12__photo-hover > .fa {
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.main-projects__row-3-12__col-3-12__photo-hover h6 {
+  text-transform: uppercase;
+  font-family: $headerFont;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.main-projects__row-3-12__col-3-12__photo-hover p {
+  font-family: $textFont;
+  font-style: italic;
+}
+.main-projects__row-3-12__col-3-12__half-height:hover .main-projects__row-3-12__col-3-12__photo-hover {
+  opacity: 1;
+  transition: 0.5s all;
+}
+.main-projects__row-3-12__col-3-12__all-height:hover .main-projects__row-3-12__col-3-12__photo-hover {
+  opacity: 1;
+  transition: 0.5s all;
+}
+
+
+.main-projects__quotation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+}
+
+.main-projects__quotation button {
+  height: 100%;
+  cursor: pointer;
+  background: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+.main-projects__quotation button > .fa {
+  color: $textColor;
+}
+.main-projects_quotation-photo {
+  width: 220px;
+  height: 120px;
+  background-image: url("../images/our-projects/Bez-nazwy-1.jpg");
+  background-position: center center;
+  background-size: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 15px;
+}
+.main-projects__quotation__text {
+  padding-right: 40px;
+  padding-left: 30px;
+}
+.main-projects__quotation__text p {
+  font-family: $textFont;
+  color: $textColor;
+  font-style: italic;
+  padding-bottom: 10px;
+}
+.main-projects__quotation__text h6 {
+  font-family: $titleFont;
+  font-size: 20px;
+  position: relative;
+  padding-left: 40px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #f38181;
+  }
+}
