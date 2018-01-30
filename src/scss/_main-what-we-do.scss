@@ -1,6 +1,10 @@
 .main-what-we-do__row-6-12 {
   max-height: 360px;
   margin-bottom: 100px;
+
+  @media (max-width: $smallDevices) {
+    max-height: initial;
+  }
 }
 .main-what-we-do__row__col-6-12 {
   height: 100%;
@@ -92,6 +96,10 @@
   justify-content: space-around;
   align-items: center;
   height: 120px;
+
+  @media (max-width: $smallDevices) {
+    height: 180px;
+  }
 }
 
 .main-what-we-do__quotation button {
@@ -111,10 +119,23 @@
   color: $shadowColor;
   font-size: 70px;
   padding: 0 60px;
+
+  @media (max-width: $smallDevices) {
+    padding: 0 30px;
+  }
+
+  @media (max-width: $extraSmallDevices) {
+    padding: 0;
+  }
 }
 .main-what-we-do__quotation__text {
   padding-right: 60px;
   padding-left: 10px;
+
+  @media (max-width: $smallDevices) {
+    padding-right: 10px;
+    padding-left: 0;
+  }
 }
 .main-what-we-do__quotation__text p {
   font-family: $textFont;

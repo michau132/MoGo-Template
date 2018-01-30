@@ -3,37 +3,36 @@
   width: 100%;
   position: relative;
   margin-bottom: 80px;
-}
 
+  @media (max-width: $smallDevices) {
+    height: 400px;
+  }
+}
 .main-about-us__header__row__col-4-12__photo-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
   opacity: 0;
   transition: 0.5s all;
-
-  &:after {
-    content: 'super team';
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: $headerFont;
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  &:before {
-    font-family: "FontAwesome";
-    content: "\f0c0";
+}
+.main-about-us__header__row__col-4-12__photo-hover p {
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: $headerFont;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.main-about-us__header__row__col-4-12__photo-hover > .fa {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
     font-size: 18px;
+  color: #fff;
   }
-}
+
 .main-about-us__header__row__col-4-12:hover .main-about-us__header__row__col-4-12__photo-hover {
   opacity: 1;
 
@@ -54,6 +53,15 @@
 
   &:last-of-type {
     border-right: 0.5px solid $onGradientColor;
+
+    @media (max-width: 500px) {
+      border-right: none;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding: 10px 0;
+    border-left: none;
   }
 }
 .main-about-us__row-numbers__col-5-12 h4 {

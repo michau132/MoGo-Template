@@ -1,0 +1,9 @@
+.main-footer {}
+.main-footer h3 {
+  font-family:$headerFont;
+  text-align: center;
+  border-top: 1px solid $textColor;
+}
+.main-footer h3 span {
+  color: #f38181;
+}

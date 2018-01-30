@@ -4,10 +4,9 @@
 @import '_grid.scss';
 @import '_global-class.scss';
 @import '_photo-hover.scss';
-
+@import '_navigation.scss';
 @import '_header.scss';
 @import '_main-page.scss';
-@import '_navigation.scss';
 @import '_main-banner.scss';
 @import '_main-about-us.scss';
 @import '_main-services.scss';
@@ -18,13 +17,4 @@
 @import '_main-clients.scss';
 @import '_main-blog.scss';
 @import '_main-map.scss';
-
-.main-footer {}
-.main-footer h3 {
-  font-family:$headerFont;
-  text-align: center;
-  border-top: 1px solid $textColor;
-}
-.main-footer h3 span {
-  color: #f38181;
-}
+@import '_main-footer.scss';

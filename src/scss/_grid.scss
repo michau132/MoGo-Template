@@ -9,10 +9,36 @@ $gap: 30px;
     grid-gap: $gap;
     @if ($i % 2 == 0) {
       grid-template-columns: repeat(($column / $i), 1fr);
+
+      @media (max-width: $mediumDevices) {
+        grid-column-gap: $gap / 2;
+        margin: 0 1.5em;
+      }
+      @media (max-width: $smallDevices) {
+        grid-column-gap: 0;
+        margin: 0 1em;
+        grid-template-rows: repeat(1fr);
+        grid-template-columns: none;
+      }
+
     } @else if  ($i % 3 == 0) {
       grid-template-columns: repeat(($column / $i), 1fr);
+
+      @media (max-width: $smallDevices) {
+        grid-template-columns: none;
+        grid-template-rows: minmax(auto, 400px);
+        margin: 0 1em;
+      }
     } @else {
           grid-template-columns: repeat($i, 1fr);
+        
+          @media (max-width: 600px) {
+            grid-gap: 0;
+          }
+          @media (max-width: 500px) {
+            grid-template-columns: none;
+            grid-template-rows: repeat($i, 1fr);
+          }
     }
   }
 }

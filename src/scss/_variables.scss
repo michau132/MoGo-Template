@@ -6,6 +6,9 @@ $titleFont: 'Kaushan Script', cursive;
 $onGradientColor: #fff;
 $shadowColor: #95e1d3;
 
+$mediumDevices: 991px;
+$smallDevices: 767px;
+$extraSmallDevices: 575px;
 
 @mixin stylingLinks {
   text-transform: uppercase;

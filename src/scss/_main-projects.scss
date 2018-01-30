@@ -5,6 +5,10 @@
   grid-gap: 0;
   height: 600px;
   margin-bottom: 80px;
+
+  @media(max-width: $smallDevices) {
+    height: 1600px;
+  }
 }
 .main-projects__row-3-12__col-3-12 {
   height: 100%;

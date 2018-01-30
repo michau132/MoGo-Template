@@ -10,24 +10,46 @@
     <link type="text/css" rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <section class="main-page">
+    <section class="main-page" id="main-page">
         <div class="container">
-            <nav class="main-page__nav">
-                <h2 class="main-page__nav__logo"><a href="/">MoGo</a></h2>
-                <ul class="main-page__nav__navigation">
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">work</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
-                    <li><a href="#">
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    </a></li>
-                    <li><a href="#">
-                        <i class="fa fa-search" aria-hidden="true"></i>
-                    </a></li>
-                </ul>
-            </nav>
+            <header class="main-page__header">
+                <h2 class="main-page__header__nav__logo"><a href="#main-page">MoGo</a></h2>
+                <nav class="main-page__header__nav ">
+                    <ul class="main-page__header__nav__navigation">
+                        <li><a href="#about-us">about</a></li>
+                        <li><a href="#service">service</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li><a href="#blog">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </a></li>
+                        <li><a href="#">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a></li>
+                    </ul>
+                    <label class="main-page__header__nav__hamburger">
+                        <input type='checkbox'>
+                        <span class='menu'>
+                            <span class='hamburger'></span>
+                        </span>
+                        <ul>
+                            <li><a href="#about-us">about</a></li>
+                            <li><a href="#service">service</a></li>
+                            <li><a href="#work">work</a></li>
+                            <li><a href="#blog">blog</a></li>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </a></li>
+                            <li><a href="#">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a></li>
+                        </ul>
+                    </label>
+                </nav>
+
+            </header>
             <section class="main-page__main-banner">
                 <h2 class="main-page__main-banner-title">Creative Template</h2>
                 <h1 class="main-page__main-banner-header">
@@ -39,7 +61,7 @@
         </div>
     </section>
     <!-- end main-page -->
-    <section class="main-about-us">
+    <section class="main-about-us" id="about-us">
         <div class="container">
             <header class="main-about-us__header header">
                 <h3 class="main-about-us__header__title header__title">What we do</h3>
@@ -48,15 +70,24 @@
             </header>
             <div class="main-about-us__row-4-12 row-4-12">
                 <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover"></span>
+                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>super team</p>
+                    </span>
                     <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-1.jpg" alt="">
                 </div>
                 <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover"></span>
+                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>super team</p>
+                    </span>
                     <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-2.png" alt="">
                 </div>
                 <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover"></span>
+                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+                        <i class="fa fa-users" aria-hidden="true"></i>
+                        <p>super team</p>
+                    </span>
                     <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-3.jpg" alt="">
                 </div>
             </div>
@@ -147,7 +178,7 @@
         </div>
     </section>
     <!-- end main-design -->
-    <section class="main-what-we-do">
+    <section class="main-what-we-do" id="service">
         <div class="container">
             <header class="main-what-we-do__header header">
                 <h3 class="main-what-we-do__header__title header__title">Service</h3>
@@ -256,7 +287,7 @@
         </div>
     </section>
     <!-- end main-our-team -->
-    <section class="main-projects">
+    <section class="main-projects" id="work">
         <div class="container">
             <header class="main-projects__header header">
                 <h3 class="main-projects__header__title header__title">What we do</h3>
@@ -401,7 +432,7 @@
         </div>
     </section>
     <!-- end main-clients -->
-    <article class="main-blog">
+    <article class="main-blog" id="blog">
         <div class="container">
             <header class="main-blog__header header">
                 <h3 class="main-blog__header__title header__title">Our stories</h3>
@@ -560,5 +591,6 @@
         </div>
     </footer>
     <!-- end main-footer -->
+    <script src="js/script.min.js"></script>
 </body>
 </html>

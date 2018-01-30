@@ -5,6 +5,24 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1200px;
+
+  @media (max-width: $mediumDevices) {
+    max-width: 890px;
+  }
+  
+  @media (max-width: $smallDevices) {
+    max-width: 680px;
+  }
+
+  @media (max-width: $extraSmallDevices) {
+    max-width: 500px;
+  }
+  @media (max-width: 500px) {
+    max-width: 400px;
+  }
+  @media (max-width: 400px) {
+    max-width: 300px;
+  }
 }
 img {
   display: block;

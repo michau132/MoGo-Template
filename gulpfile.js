@@ -7,6 +7,7 @@ const sourcemaps      = require("gulp-sourcemaps"); //sourcemapy
 const plumber         = require("gulp-plumber"); //zapobiera przerywaniu taskow
 const rename          = require("gulp-rename"); //zmiana nazwy wynikowych plikow
 const gutil           = require("gulp-util");
+const webpack         = require("webpack");
 
 const handleError = function(err) {
     console.log(gutil.colors.red(err.toString()));
@@ -43,13 +44,23 @@ gulp.task("sass", function() {
         .pipe(browserSync.stream({match: "**/*.css"}));
 });
 
+gulp.task("es6", function(cb) {
+    return webpack(require("./webpack.config.js"), function(err, stats) {
+        if (err) throw err;
+        console.log(stats.toString());
+        cb();
+        browserSync.reload();
+    })
+});
+
 gulp.task("watch", function() {
     gulp.watch("src/scss/**/*.scss", ["sass"]);
+    gulp.watch("src/js/**/*.js", ["es6"]);
     gulp.watch("dist/**/*.html").on("change", browserSync.reload);
 });
 
 
 gulp.task("default", function() {
     console.log(gutil.colors.yellow("======================= start ======================="));
-    gulp.start(["sass", "browseSync", "watch"]);
+    gulp.start(["sass", "es6", "browseSync", "watch"]);
 });

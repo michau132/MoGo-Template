@@ -7,6 +7,10 @@
   font-family: $titleFont;
   font-size: 50px;
   padding-bottom: 55px;
+
+  @media (max-width: 530px) {
+    font-size: 42px;
+  }
 }
 .main-page__main-banner-header {
   font-family: $headerFont;
@@ -24,6 +28,10 @@
     height: 3px;
     width: 50px;
     background-color: $onGradientColor;
+  }
+
+  @media (max-width: 530px) {
+    font-size: 80px;
   }
 }
 .main-page__main-banner-btn {
