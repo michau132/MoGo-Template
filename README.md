@@ -20,4 +20,4 @@ Functionality:
 
 ToDo:
 -contact form
--validation form
+-validation form with firebase
