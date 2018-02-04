@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MoGo Template</title>
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -48,8 +49,8 @@
                         </ul>
                     </label>
                 </nav>
-
             </header>
+            <button class="scrollTop zoomInDown"><i class="fas fa-angle-double-up"></i></button>
             <section class="main-page__main-banner">
                 <h2 class="main-page__main-banner-title">Creative Template</h2>
                 <h1 class="main-page__main-banner-header">
@@ -189,24 +190,35 @@
                 <div class="main-what-we-do__row__col-6-12 col-6-12">
                     <img src="./images/what-we-do/Bez-nazwy-5.jpg" alt="">
                 </div>
-                <div class="main-what-we-do__row__col-6-12 col-6-12">
-                    <div class="main-what-we-do__row__col-6-12__metier showed">
+                <div class="main-what-we-do__row__col-6-12 col-6-12" id="angle-down">
+                    <div class="main-what-we-do__row__col-6-12__metier">
                         <div class="main-what-we-do__row__col-6-12__metier__title ">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
                             <h5>photography</h5>
+                            <i class="fas fa-angle-down up"></i>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
+                        <div class="main-what-we-do__row__col-6-12__metier__text visible">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
+                        </div>
                     </div>
                     <div class="main-what-we-do__row__col-6-12__metier">
                         <div class="main-what-we-do__row__col-6-12__metier__title">
                             <i class="fa fa-align-center" aria-hidden="true"></i>
                             <h5>creativity</h5>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="main-what-we-do__row__col-6-12__metier__text hidden">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
                         </div>
                     </div>
                     <div class="main-what-we-do__row__col-6-12__metier">
                         <div class="main-what-we-do__row__col-6-12__metier__title">
                             <i class="fa fa-bullseye" aria-hidden="true"></i>
                             <h5>web design</h5>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="main-what-we-do__row__col-6-12__metier__text hidden">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
                         </div>
                     </div>
                 </div>
@@ -569,7 +581,7 @@
                 <div class="main-map__row__col-4-12">
                     <h4 class="main-map__row__col-4-12__title">instagram</h4>
                     <ul class="main-map__row__col-4-12__row-4-12 row-4-12">
-                        <li><img src="./images/map/instagram1.jpg" alt=""></li>
+                        <li><img src="./images/map/instagram1.jpeg" alt=""></li>
                         <li><img src="./images/map/instagram2.jpg" alt=""></li>
                         <li><img src="./images/map/instagram3.jpg" alt=""></li>
                         <li><img src="./images/map/instagram4.jpg" alt=""></li>
@@ -579,6 +591,27 @@
                         <li><img src="./images/map/instagram8.jpg" alt=""></li>
                         <li><img src="./images/map/instagram9.jpg" alt=""></li>
                     </ul>
+                    <div id="myModal" class="modal">
+                        <span class="close cursor">&times;</span>
+                        <div class="modal-content">
+                            <div class="caption-container">
+                                <img src="./images/map/instagram1.jpeg" id="caption">
+                                <a class="prev">&#10094;</a>
+                                <a class="next">&#10095;</a>
+                            </div>
+                            <div class="column-container">
+                                <img src="./images/map/instagram1.jpeg" alt="">
+                                <img src="./images/map/instagram2.jpg" alt="">
+                                <img src="./images/map/instagram3.jpg" alt="">
+                                <img src="./images/map/instagram4.jpg" alt="">
+                                <img src="./images/map/instagram5.jpg" alt="">
+                                <img src="./images/map/instagram6.jpg" alt="">
+                                <img src="./images/map/instagram7.jpg" alt="">
+                                <img src="./images/map/instagram8.jpg" alt="">
+                                <img src="./images/map/instagram9.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
                     <p>View more photos</p>
                 </div>
             </div>

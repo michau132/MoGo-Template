@@ -1,6 +1,6 @@
 .main-what-we-do__row-6-12 {
-  max-height: 360px;
   margin-bottom: 100px;
+
 
   @media (max-width: $smallDevices) {
     max-height: initial;
@@ -8,6 +8,7 @@
 }
 .main-what-we-do__row__col-6-12 {
   height: 100%;
+
 }
 .main-what-we-do__row__col-6-12:last-of-type {
   display: flex;
@@ -15,21 +16,18 @@
   justify-content: space-between;
 }
 .main-what-we-do__row__col-6-12 img{
-  height: 100%;
+  height: 390px;
   display: block;
 }
 .main-what-we-do__row__col-6-12__metier {
   margin-bottom: 20px;
-  border: 1px solid rgba($textColor, 0.5);
 
   &:last-of-type {
     margin-bottom: 0;
   }
 }
-.main-what-we-do__row__col-6-12__metier.showed {
-  height: 230px;
-}
-.main-what-we-do__row__col-6-12__metier p {
+
+.main-what-we-do__row__col-6-12__metier__text p {
   font-family: $textFont;
   font-style: italic;
   color: $textColor;
@@ -37,7 +35,8 @@
   line-height: 25px;
   overflow-y: scroll;
   height: 160px;
-  padding-bottom: -25px;
+  transition: all .2s ease-out;
+  position: relative;
 
   &::-webkit-scrollbar {
     width: 6px;
@@ -58,17 +57,14 @@
   display: grid;
   grid-template-columns: 10% 90%;
   grid-row: unset;
-  border-bottom: 1px solid rgba($textColor, 0.5);
+  border: 1px solid rgba($textColor, 0.5);
   position: relative;
-
-  &:before {
-    font-family: FontAwesome;
-    content: '\f107';
-    position: absolute;
-    top: 25%;
-    left: 95%;
-    font-size: 25px;
-  }
+}
+.fa-angle-down {
+  position: absolute;
+  top: 25%;
+  left: 95%;
+  font-size: 25px;
 }
 .main-what-we-do__row__col-6-12__metier__title > .fa,
 .main-what-we-do__row__col-6-12__metier__title h5 {
@@ -158,4 +154,31 @@
     height: 2px;
     background-color: #f38181;
   }
+}
+.main-what-we-do__row__col-6-12__metier__text {
+  border: 1px solid rgba($textColor, 0.5);
+  border-top: 0;
+}
+.main-what-we-do__row__col-6-12__metier__text.visible,
+.main-what-we-do__row__col-6-12__metier__text.hidden {
+  overflow: hidden;
+}
+.main-what-we-do__row__col-6-12__metier__text.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s linear;
+}
+.main-what-we-do__row__col-6-12__metier__text.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+.main-what-we-do__row__col-6-12__metier__text.hidden p {
+  margin-top: -10000px;
+  transition: margin-top 0s 0.5s;
+}
+
+.up {
+  transform: rotate(180deg);
 }

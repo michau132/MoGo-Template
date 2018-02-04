@@ -1,13 +1,19 @@
+import {lightbox} from "./lightbox.js";
+import {stickyNavBar} from "./nav.js";
+import {arrowUp} from "./arrowUp.js";
+import {btnScrollTop} from "./btnScrollTop.js";
 
-const navSticky = document.querySelector('.main-page__header');
 
-window.addEventListener('scroll', function () {
-    if(window.scrollY > 50) {
-        navSticky.classList.add('sticky');
-    } else {
-        navSticky.classList.remove('sticky');
-    }
-});
+document.addEventListener('DOMContentLoaded', function() {
+    lightbox();
+    stickyNavBar();
+    btnScrollTop();
+    arrowUp();
+
+})
+
+
+
 
 
 

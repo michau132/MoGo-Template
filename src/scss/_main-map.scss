@@ -167,25 +167,3 @@
   font-style: italic;
   color: $textColor;
 }
-.main-map__row__col-4-12__row-4-12 {
-  height: 272px;
-  grid-gap: 2px;
-  list-style: none;
-  margin-bottom: 10px;
-  width: 100%;
-
-
-  @media (max-width: $mediumDevices) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(100px, auto);
-    height: initial;
-  }
-  @media (max-width: $smallDevices) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(70px, auto);
-    height: initial;
-  }
-}
-.main-map__row__col-4-12__row-4-12 li {
-  display: inline-block;
-}
