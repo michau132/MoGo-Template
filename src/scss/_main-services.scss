@@ -1,7 +1,7 @@
 .main-services {
   padding-bottom: 80px;
 }
-.main-services__row-4-12 {
+.main-services__row {
   position: relative;
 
   &:after {
@@ -33,13 +33,13 @@
     }
   }
 }
-.main-services__row__col-4-12 {
+.service {
   display: grid;
   grid-template-columns: 20% 80% ;
   padding-bottom: 60px;
 }
 
-.main-services__row__col-4-12 > .fa {
+.service > .fa {
   color: $shadowColor;
   text-align: center;
   font-size: 30px;
@@ -47,18 +47,18 @@
   grid-row: 1/3;
 }
 
-.main-services__row__col-4-12 h4,
-.main-services__row__col-4-12 p {
+.services__title,
+.service__desc {
   grid-column: 2;
 }
-.main-services__row__col-4-12 h4 {
+.services__title {
   grid-row: 1;
   text-transform: uppercase;
   font-family: $headerFont;
   font-weight: bold;
   padding-bottom: 15px;
 }
-.main-services__row__col-4-12 p {
+.service__desc {
   font-family: $textFont;
   grid-row: 2;
   color: $textColor;

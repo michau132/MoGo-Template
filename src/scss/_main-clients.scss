@@ -3,22 +3,22 @@
   url("../images/clients/background.jpg");
   padding-bottom: 100px;
 }
-.main-clients__row-6-12 {
+.main-clients__row {
   grid-gap: 70px;
 }
-.main-clients__row__col-6-12 {
+.client {
   display: grid;
   grid-template-columns: 120px 1fr;
   height: 170px;
   grid-column-gap: 30px;
 }
-.main-clients__row__col-6-12__text {}
-.main-clients__row__col-6-12__text h4 {
+.main-clients__text {}
+.client__name {
   font-family: $headerFont;
   font-weight: bold;
   padding-bottom: 10px;
 }
-.main-clients__row__col-6-12__text h6 {
+.client__position {
   font-family: $textFont;
   font-style: italic;
   color: #a7a7a7;
@@ -35,12 +35,12 @@
     background-color: #f38181;
   }
 }
-.main-clients__row__col-6-12__text p {
+.client__opinion {
   font-family: $textFont;
   color: #a7a7a7;
 }
 
-.main-clients__row__col-6-12__photo-box {
+.main-clients__photo-box {
   height: 120px;
   width: 120px;
   position: relative;
@@ -48,24 +48,24 @@
   border-radius: 50%;
 }
 
-.main-clients__row__col-6-12__photo-box img {
+.client__photo {
   height: unset;
   width: unset;
   position: absolute;
 }
-.main-clients__row__col-6-12:first-child > .main-clients__row__col-6-12__photo-box > img {
+.client:first-child > .main-clients__photo-box > img {
   top: -10px;
   left: -80px;
 }
-.main-clients__row__col-6-12:last-child > .main-clients__row__col-6-12__photo-box > img {
+.client:last-child > .main-clients__photo-box > img {
   top: -40px;
   left: -95px;
 }
-.main-clients__row__col-6-12:nth-child(3) > .main-clients__row__col-6-12__photo-box > img {
+.client:nth-child(3) > .main-clients__photo-box > img {
   top: -3px;
   left: -60px;
 }
-.main-clients__row__col-6-12:nth-child(2) > .main-clients__row__col-6-12__photo-box > img {
+.client:nth-child(2) > .main-clients__photo-box > img {
   top: -115px;
   left: -65px;
 }

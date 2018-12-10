@@ -31,3 +31,23 @@
   font-family: $textFont;
   color: $textColor;
 }
+
+.header--red {
+  color: #f38181;
+}
+.header__title--map-marker > .fa {
+  font-size: 30px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 36%;
+    left: 49.7%;
+    width:4.5px;
+    height: 4.5px;
+    background-color: #f38181;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+  }
+}

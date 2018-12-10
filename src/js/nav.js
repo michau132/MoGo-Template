@@ -1,5 +1,5 @@
 function stickyNavBar() {
-    const navSticky = document.querySelector('.main-page__header');
+    const navSticky = document.querySelector('.navigation');
 
     window.addEventListener('scroll', function () {
         if(window.scrollY > 50) {

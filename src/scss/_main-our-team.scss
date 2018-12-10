@@ -1,37 +1,37 @@
-.main-our-team__row-4-12 {
+.main-our-team__row {
   margin-bottom: 120px;
 }
-.main-our-team__row__col-4-12__photo {
+
+
+.employee__photo {
   position: relative;
   height: 400px;
   margin-bottom: 25px;
 }
-.main-our-team__row__col-4-12__photo-hover {
-  opacity: 0;
-}
-.main-our-team__row__col-4-12__photo:hover .main-our-team__row__col-4-12__photo-hover {
+
+.employee__photo:hover .photo-hover {
   opacity: 1;
   transition: 0.5s all;
 }
-.main-our-team__row__col-4-12__photo-image-1 {
+.employee__photo-image-1 {
   height: 100%;
   background-image: url("../images/meet-our-team/Bez-nazwy-6.jpg");
   background-size: cover;
   background-position: 22% center;
 }
-.main-our-team__row__col-4-12__photo-image-2 {
+.employee__photo-image-2 {
   height: 100%;
   background-image: url("../images/meet-our-team/Bez-nazwy-7.jpg");
   background-position: 60% center;
   background-size: cover;
 }
-.main-our-team__row__col-4-12__photo-image-3 {
+.employee__photo-image-3 {
   height: 100%;
   background-image: url("../images/meet-our-team/Bez-nazwy-8.jpg");
   background-position: center center;
   background-size: cover;
 }
-.main-our-team__row__col-4-12__photo-hover__icons {
+.photo-hover__icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -44,7 +44,7 @@
   transform: translate(-50%, -50%);
 }
 
-.main-our-team__row__col-4-12__photo-hover__icons a {
+.photo-hover__link {
   text-decoration: none;
   background-color: #fce38a;
   font-size: 20px;
@@ -67,13 +67,13 @@
   }
 }
 
-.main-our-team__row__col-4-12 figcaption {
+.employee__name {
   font-family: $headerFont;
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
 }
-.main-our-team__row__col-4-12 p {
+.employee__position {
   text-align: center;
   font-family: $textFont;
   font-style: italic;

@@ -1,7 +1,7 @@
 .main-blog {
   margin-bottom: 100px;
 }
-.main-blog__row__col-4-12__image {
+.blog__image-box {
   height: 240px;
   position: relative;
 
@@ -9,7 +9,7 @@
     height: initial;
   }
 }
-.main-blog__row__col-4-12__image-date {
+.blog__published-date {
   position: absolute;
   left:-14px;
   bottom: 10px;
@@ -20,44 +20,45 @@
   text-align: center;
   vertical-align: center;
 }
-.main-blog__row__col-4-12__image-date strong {
+.blog__published-date strong {
   font-family: $headerFont;
   font-weight: bold;
   display: block;
   margin-top: 20px;
 }
-.main-blog__row__col-4-12__image-date span {
+.blog__published-date span {
   font-family: $textFont;
   font-style: italic;
 }
-.main-blog__row__col-4-12 figcaption {
+.blog__title {
   font-family: $textFont;
   text-transform: uppercase;
   font-weight: bold;
   padding: 10px 0;
 }
-.main-blog__row__col-4-12 p:first-of-type {
+.blog__desc {
   font-family: $textFont;
   color: $textColor;
   padding-bottom: 20px;
 }
-.main-blog__row__col-4-12__notes {
+.blog__followers {
   border-top: 1px solid $textColor;
   display: flex;
   padding-top: 15px;
 }
-.main-blog__row__col-4-12__notes__views {
+.blog__views {
   display: flex;
   margin-right: 25px;
 }
-.main-blog__row__col-4-12__notes__comments {
+.blog__comments {
   display: flex;
   margin-right: 5px;
 }
-.main-blog__row__col-4-12__notes p {
+.views__count,
+.comments__count {
   font-family: $textFont;
   font-style: italic;
 }
-.main-blog__row__col-4-12__notes .fa {
+.blog__followers .fa {
   color: $shadowColor;
 }

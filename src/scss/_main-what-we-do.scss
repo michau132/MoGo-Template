@@ -1,4 +1,4 @@
-.main-what-we-do__row-6-12 {
+.main-what-we-do__row {
   margin-bottom: 100px;
 
 
@@ -6,16 +6,16 @@
     max-height: initial;
   }
 }
-.main-what-we-do__row__col-6-12 {
+.main-what-we-do__col {
   height: 100%;
 
 }
-.main-what-we-do__row__col-6-12:last-of-type {
+.main-what-we-do__col:last-of-type {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.main-what-we-do__row__col-6-12 img{
+.first-col__img{
   height: 390px;
   display: block;
 }
@@ -27,7 +27,7 @@
   }
 }
 
-.main-what-we-do__row__col-6-12__metier__text p {
+.metier__text {
   font-family: $textFont;
   font-style: italic;
   color: $textColor;
@@ -53,7 +53,7 @@
     border-radius: 10px;
   }
 }
-.main-what-we-do__row__col-6-12__metier__title {
+.metier__banner {
   display: grid;
   grid-template-columns: 10% 90%;
   grid-row: unset;
@@ -66,16 +66,16 @@
   left: 95%;
   font-size: 25px;
 }
-.main-what-we-do__row__col-6-12__metier__title > .fa,
-.main-what-we-do__row__col-6-12__metier__title h5 {
+.metier__banner > .fa,
+.metier__title {
   line-height: 50px;
 }
-.main-what-we-do__row__col-6-12__metier__title > .fa {
+.metier__banner > .fa {
   color: $shadowColor;
   font-size: 30px;
   text-align: center;
 }
-.main-what-we-do__row__col-6-12__metier__title h5 {
+.metier__title {
   font-family: $headerFont;
   text-transform: uppercase;
   font-weight: bold;
@@ -84,101 +84,34 @@
   transform: rotate(90deg);
 }
 
-.main-what-we-do__box {
-  background-color: #f8f8f8;
-}
-.main-what-we-do__quotation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 120px;
-
-  @media (max-width: $smallDevices) {
-    height: 180px;
-  }
-}
-
-.main-what-we-do__quotation button {
-  height: 100%;
-  cursor: pointer;
-  background: none;
-  border: none;
-
-  &:focus {
-    outline: none;
-  }
-}
-.main-what-we-do__quotation button > .fa {
-  color: $textColor;
-}
-.main-what-we-do__quotation > .fa-comments {
-  color: $shadowColor;
-  font-size: 70px;
-  padding: 0 60px;
-
-  @media (max-width: $smallDevices) {
-    padding: 0 30px;
-  }
-
-  @media (max-width: $extraSmallDevices) {
-    padding: 0;
-  }
-}
-.main-what-we-do__quotation__text {
-  padding-right: 60px;
-  padding-left: 10px;
-
-  @media (max-width: $smallDevices) {
-    padding-right: 10px;
-    padding-left: 0;
-  }
-}
-.main-what-we-do__quotation__text p {
-  font-family: $textFont;
-  color: $textColor;
-  font-style: italic;
-  padding-bottom: 10px;
-}
-.main-what-we-do__quotation__text h6 {
-  font-family: $titleFont;
-  font-size: 20px;
-  position: relative;
-  padding-left: 40px;
-
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 30px;
-    height: 2px;
-    background-color: #f38181;
-  }
-}
-.main-what-we-do__row__col-6-12__metier__text {
+.metier__box-text {
   border: 1px solid rgba($textColor, 0.5);
   border-top: 0;
 }
-.main-what-we-do__row__col-6-12__metier__text.visible,
-.main-what-we-do__row__col-6-12__metier__text.hidden {
+.metier__box-text.visible,
+.metier__box-text.hidden {
   overflow: hidden;
 }
-.main-what-we-do__row__col-6-12__metier__text.visible {
+.metier__box-text.visible {
   visibility: visible;
   opacity: 1;
   transition: opacity 1s linear;
 }
-.main-what-we-do__row__col-6-12__metier__text.hidden {
+.metier__box-text.hidden {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0s 0.5s, opacity 0.5s linear;
 }
 
-.main-what-we-do__row__col-6-12__metier__text.hidden p {
+.metier__box-text.hidden p {
   margin-top: -10000px;
   transition: margin-top 0s 0.5s;
 }
 
 .up {
   transform: rotate(180deg);
+}
+
+.main-what-we-do__box {
+  background-color: #f8f8f8;
 }

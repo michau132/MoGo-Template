@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pl">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,47 +11,79 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="./css/style.min.css">
 </head>
+
 <body>
     <section class="main-page" id="main-page">
         <div class="container">
-            <header class="main-page__header">
-                <h2 class="main-page__header__nav__logo"><a href="#main-page">MoGo</a></h2>
-                <nav class="main-page__header__nav ">
-                    <ul class="main-page__header__nav__navigation">
-                        <li><a href="#about-us">about</a></li>
-                        <li><a href="#service">service</a></li>
-                        <li><a href="#work">work</a></li>
-                        <li><a href="#blog">blog</a></li>
-                        <li><a href="#">contact</a></li>
-                        <li><a href="#">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </a></li>
-                        <li><a href="#">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </a></li>
-                    </ul>
-                    <label class="main-page__header__nav__hamburger">
-                        <input type='checkbox'>
-                        <span class='menu'>
-                            <span class='hamburger'></span>
-                        </span>
-                        <ul>
-                            <li><a href="#about-us">about</a></li>
-                            <li><a href="#service">service</a></li>
-                            <li><a href="#work">work</a></li>
-                            <li><a href="#blog">blog</a></li>
-                            <li><a href="#">contact</a></li>
-                            <li><a href="#">
+            <header class="navigation">
+                <h2 class="navigation__logo">
+                    <a class="logo__link" href="#main-page">MoGo</a>
+                </h2>
+                <nav class="navigation__nav">
+                    <ul class="navigation__list">
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#about-us">about</a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#service">service</a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#work">work</a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#blog">blog</a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#">contact</a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#">
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </a></li>
-                            <li><a href="#">
+                            </a>
+                        </li>
+                        <li class="navigation__element">
+                            <a class="navigation__link" href="#">
                                 <i class="fa fa-search" aria-hidden="true"></i>
-                            </a></li>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="navigation__mobile">
+                        <div class='menu'>
+                            <span class='hamburger'></span>
+                        </div>
+                        <ul class="navigation__list">
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#about-us">about</a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#service">service</a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#work">work</a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#blog">blog</a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#">contact</a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#">
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </a>
+                            </li>
+                            <li class="navigation__element">
+                                <a class="navigation__link" href="#">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
-                    </label>
+                    </div>
                 </nav>
             </header>
-            <button class="scrollTop zoomInDown"><i class="fas fa-angle-double-up"></i></button>
+            <button class="scrollTop zoomInDown">
+                <i class="fas fa-angle-double-up"></i>
+            </button>
             <section class="main-page__main-banner">
                 <h2 class="main-page__main-banner-title">Creative Template</h2>
                 <h1 class="main-page__main-banner-header">
@@ -64,57 +97,59 @@
     <!-- end main-page -->
     <section class="main-about-us" id="about-us">
         <div class="container">
-            <header class="main-about-us__header header">
-                <h3 class="main-about-us__header__title header__title">What we do</h3>
-                <h2 class="main-about-us__header__header header__header">story about us</h2>
-                <p class="main-about-us__header__text header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
+            <header class="header">
+                <h3 class="header__title">What we do</h3>
+                <h2 class="header__header">story about us</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid
+                    cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
             </header>
-            <div class="main-about-us__row-4-12 row-4-12">
-                <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+            <div class="row-4-12">
+                <div class="main-about-us__col">
+                    <span class="main-about-us__photo-hover photo-hover">
                         <i class="fa fa-users" aria-hidden="true"></i>
-                        <p>super team</p>
+                        <h6 class="photo-hover__title">super team</h6>
                     </span>
-                    <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-1.jpg" alt="">
+                    <img class="main-about-us__img" src="./images/about-us/Bez-nazwy-1.jpg" alt="">
                 </div>
-                <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+                <div class="main-about-us__col">
+                    <span class="main-about-us__photo-hover photo-hover">
                         <i class="fa fa-users" aria-hidden="true"></i>
-                        <p>super team</p>
+                        <h6 class="photo-hover__title">super team</h6>
                     </span>
-                    <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-2.png" alt="">
+                    <img class="main-about-us__img" src="./images/about-us/Bez-nazwy-2.png" alt="">
                 </div>
-                <div class="main-about-us__header__row__col-4-12 col-4-12">
-                    <span class="main-about-us__header__row__col-4-12__photo-hover photo-hover">
+                <div class="main-about-us__col">
+                    <span class="main-about-us__photo-hover photo-hover">
                         <i class="fa fa-users" aria-hidden="true"></i>
-                        <p>super team</p>
+                        <h6 class="photo-hover__title">super team</h6>
                     </span>
-                    <img class="main-about-us__header__row__col-4-12__image" src="./images/about-us/Bez-nazwy-3.jpg" alt="">
+                    <img class="main-about-us__img" src="./images/about-us/Bez-nazwy-3.jpg" alt="">
                 </div>
             </div>
         </div>
-        <div class="main-about-us__box">
+        <div class="main-about-us__counters">
             <div class="container">
-                <div class="main-about-us__row-5-12 row-5-12">
-                    <div class="main-about-us__row-numbers__col-5-12 col-5-12">
-                        <h4>42</h4>
-                        <p>web design projects</p>
+                <div class="counters__row row-5-12">
+                    <div class="counters__col">
+                        <h4 class="counters__count">42</h4>
+                        <p class="counters__desc">web design projects</p>
                     </div>
-                    <div class="main-about-us__row-numbers__col-5-12 col-5-12">
-                        <h4>123</h4>
-                        <p>happy client</p>
+                    <div class="counters__col">
+                        <h4 class="counters__count">123</h4>
+                        <p class="counters__desc">happy client</p>
                     </div>
-                    <div class="main-about-us__row-numbers__col-5-12 col-5-12">
-                        <h4>15</h4>
-                        <p>award winner</p>
+                    <div class="counters__col">
+                        <h4 class="counters__count">15</h4>
+                        <p class="counters__desc">award winner</p>
                     </div>
-                    <div class="main-about-us__row-numbers__col-5-12 col-5-12">
-                        <h4>99</h4>
-                        <p>cup of coffee</p>
+                    <div class="counters__col">
+                        <h4 class="counters__count">99</h4>
+                        <p class="counters__desc">cup of coffee</p>
                     </div>
-                    <div class="main-about-us__row-numbers__col-5-12 col-5-12">
-                        <h4>24</h4>
-                        <p>members</p>
+                    <div class="counters__col">
+                        <h4 class="counters__count">24</h4>
+                        <p class="counters__desc">members</p>
                     </div>
                 </div>
             </div>
@@ -123,40 +158,41 @@
     <!-- end main-about-us -->
     <section class="main-services">
         <div class="container">
-            <header class="main-services__header header">
-                <h3 class="main-services__header__title header__title">What we do</h3>
-                <h2 class="main-services__header__header header__header">story about us</h2>
+            <header class="header">
+                <h3 class="header__title">We work with</h3>
+                <h2 class="header__header">amazing services</h2>
             </header>
-            <div class="main-services__row-4-12 row-4-12">
-                <div class="main-services__row__col-4-12 col-4-12">
+            <div class="main-services__row row-4-12">
+                <div class="service">
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
-                    <h4>photography</h4>
+                    <h4 class="services__title">photography</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, provident.</p>
                 </div>
-                <div class="main-services__row__col-4-12 col-4-12">
+                <div class="service">
                     <i class="fa fa-line-chart" aria-hidden="true"></i>
-                    <h4>web design</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos, quidem.</p>
+                    <h4 class="services__title">web design</h4>
+                    <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos,
+                        quidem.</p>
                 </div>
-                <div class="main-services__row__col-4-12 col-4-12">
+                <div class="service">
                     <i class="fa fa-desktop" aria-hidden="true"></i>
-                    <h4>creativity</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quaerat?</p>
+                    <h4 class="services__title">creativity</h4>
+                    <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, quaerat?</p>
                 </div>
-                <div class="main-services__row__col-4-12 col-4-12">
+                <div class="service">
                     <i class="fa fa-book" aria-hidden="true"></i>
-                    <h4>seo</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sapiente.</p>
+                    <h4 class="services__title">seo</h4>
+                    <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, sapiente.</p>
                 </div>
-                <div class="main-services__row__col-4-12 col-4-12">
+                <div class="service">
                     <i class="fa fa-home" aria-hidden="true"></i>
-                    <h4>css/html</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, facilis!</p>
+                    <h4 class="services__title">css/html</h4>
+                    <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, facilis!</p>
                 </div>
-                <div class="main-services__row__col-4-12 col-4-12">
+                <div class="service">
                     <i class="fa fa-square-o" aria-hidden="true"></i>
-                    <h4>digital</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ipsam.</p>
+                    <h4 class="services__title">digital</h4>
+                    <p class="service__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, ipsam.</p>
                 </div>
             </div>
         </div>
@@ -164,76 +200,115 @@
     <!-- end main-services -->
     <section class="main-design">
         <div class="container">
-            <header class="main-design__header header">
-                <h3 class="main-design__header__title header__title">For all devices</h3>
-                <h2 class="main-design__header__header header__header">unique design</h2>
+            <header class="header">
+                <h3 class="header__title">For all devices</h3>
+                <h2 class="header__header">unique design</h2>
             </header>
-            <section class="main-design__photos-box">
-                <div class="main-design__photos-box__main-image">
-                    <img src="./images/unique-design/Bez-nazwy-8.png" alt="">
-                    <div class="main-design__photos-box__phone-image">
-                        <img src="./images/unique-design/Bez-nazwy-4.png" alt="">
+            <div class="photos-box">
+                <div class="photos-box__main-image">
+                    <img class="main-image__img" src="./images/unique-design/Bez-nazwy-8.png" alt="">
+                    <div class="photos-box__phone-image">
+                        <img class="phone-image__img" src="./images/unique-design/Bez-nazwy-4.png" alt="">
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     </section>
     <!-- end main-design -->
     <section class="main-what-we-do" id="service">
         <div class="container">
-            <header class="main-what-we-do__header header">
-                <h3 class="main-what-we-do__header__title header__title">Service</h3>
-                <h2 class="main-what-we-do__header__header header__header">what we do</h2>
-                <p class="main-what-we-do__header__text header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
+            <header class="header">
+                <h3 class="header__title">Service</h3>
+                <h2 class="header__header">what we do</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum.
+                    Aliquid cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
             </header>
-            <div class="main-what-we-do__row-6-12 row-6-12">
-                <div class="main-what-we-do__row__col-6-12 col-6-12">
-                    <img src="./images/what-we-do/Bez-nazwy-5.jpg" alt="">
+            <div class="main-what-we-do__row row-6-12">
+                <div class="main-what-we-do__col">
+                    <img class="first-col__img" src="./images/what-we-do/Bez-nazwy-5.jpg" alt="">
                 </div>
-                <div class="main-what-we-do__row__col-6-12 col-6-12" id="angle-down">
-                    <div class="main-what-we-do__row__col-6-12__metier">
-                        <div class="main-what-we-do__row__col-6-12__metier__title ">
+                <div class="main-what-we-do__col" id="angle-down">
+                    <div class="metier">
+                        <div class="metier__banner">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h5>photography</h5>
+                            <h5 class="metier__title">photography</h5>
                             <i class="fas fa-angle-down up"></i>
                         </div>
-                        <div class="main-what-we-do__row__col-6-12__metier__text visible">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
+                        <div class="metier__box-text visible">
+                            <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+                                blanditiis
+                                exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
+                                dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit
+                                ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel?
+                                Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+                                corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit
+                                perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta,
+                                suscipit unde!</p>
                         </div>
                     </div>
-                    <div class="main-what-we-do__row__col-6-12__metier">
-                        <div class="main-what-we-do__row__col-6-12__metier__title">
+                    <div class="metier">
+                        <div class="metier__banner">
                             <i class="fa fa-align-center" aria-hidden="true"></i>
-                            <h5>creativity</h5>
+                            <h5 class="metier__title">creativity</h5>
                             <i class="fas fa-angle-down"></i>
                         </div>
-                        <div class="main-what-we-do__row__col-6-12__metier__text hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
+                        <div class="metier__box-text hidden">
+                            <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+                                blanditiis
+                                exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
+                                dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit
+                                ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel?
+                                Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+                                corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit
+                                perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta,
+                                suscipit unde!</p>
                         </div>
                     </div>
-                    <div class="main-what-we-do__row__col-6-12__metier">
-                        <div class="main-what-we-do__row__col-6-12__metier__title">
+                    <div class="metier">
+                        <div class="metier__banner">
                             <i class="fa fa-bullseye" aria-hidden="true"></i>
-                            <h5>web design</h5>
+                            <h5 class="metier__title">web design</h5>
                             <i class="fas fa-angle-down"></i>
                         </div>
-                        <div class="main-what-we-do__row__col-6-12__metier__text hidden">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque blanditiis exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel? Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta, suscipit unde!</p>
+                        <div class="metier__box-text hidden">
+                            <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+                                blanditiis
+                                exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
+                                dicta dolor fugiat hic itaque molestias perspiciatis vel?Lorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Accusantium ad alias aut consectetur earum eos impedit
+                                ipsa, iste nemo, neque obcaecati quibusdam quisquam quo, sapiente suscipit ullam vel?
+                                Magnam, natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi,
+                                corporis dicta, doloremque eius eligendi expedita minima molestiae mollitia odit
+                                perspiciatis quaerat quasi quidem quo ratione repellendus reprehenderit soluta,
+                                suscipit unde!</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="main-what-we-do__box">
+        <div>
             <div class="container">
-                <div class="main-what-we-do__quotation">
-                    <button><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    <div class="main-what-we-do__quotation__text">
-                        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, beatae culpa eaque enim et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero molestias non omnis provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, magnam."</p>
-                        <h6>John Doe</h6>
+                <div class="main-what-we-do__slider slider">
+                    <button class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <div class="slide-track">
+                        <div class="slide">
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <div class="slide__text-box">
+                                <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Architecto, beatae culpa eaque
+                                    enim et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero
+                                    molestias non
+                                    omnis provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet,
+                                    consectetur
+                                    adipisicing elit. Error, magnam."</p>
+                                <h6 class="slide__author">John Doe</h6>
+                            </div>
+                        </div>
                     </div>
-                    <button><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    <button class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -241,56 +316,82 @@
     <!-- end main-what-we-do -->
     <section class="main-our-team">
         <div class="container">
-            <header class="main-our-team__header header">
-                <h3 class="main-our-team__header__title header__title">Who we are</h3>
-                <h2 class="main-our-team__header__header header__header">meet our team</h2>
-                <p class="main-our-team__header__text header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
+            <header class="header">
+                <h3 class="header__title">Who we are</h3>
+                <h2 class="header__header">meet our team</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid
+                    cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
             </header>
-            <div class="main-our-team__row-4-12 row-4-12">
-                <figure class="main-our-team__row__col-4-12 col-4-12">
-                    <div class="main-our-team__row__col-4-12__photo">
-                        <div class="main-our-team__row__col-4-12__photo-hover photo-hover">
-                            <div class="main-our-team__row__col-4-12__photo-hover__icons">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <div class="main-our-team__row row-4-12">
+                <figure class="employee">
+                    <div class="employee__photo">
+                        <div class="photo-hover">
+                            <div class="photo-hover__icons">
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="main-our-team__row__col-4-12__photo-image-1"></div>
+                        <div class="employee__photo-image-1"></div>
                     </div>
-                    <figcaption>Matthew Dix</figcaption>
-                    <p>Graphic Design</p>
+                    <figcaption class="employee__name">Matthew Dix</figcaption>
+                    <p class="employee__position">Graphic Design</p>
                 </figure>
-                <figure class="main-our-team__row__col-4-12 col-4-12">
-                    <div class="main-our-team__row__col-4-12__photo">
-                        <div class="main-our-team__row__col-4-12__photo-hover photo-hover">
-                            <div class="main-our-team__row__col-4-12__photo-hover__icons">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <figure class="employee">
+                    <div class="employee__photo">
+                        <div class="photo-hover">
+                            <div class="photo-hover__icons">
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="main-our-team__row__col-4-12__photo-image-2"></div>
+                        <div class="employee__photo-image-2"></div>
                     </div>
-                    <figcaption>Christopher Campbell</figcaption>
-                    <p>Branding UX design</p>
+                    <figcaption class="employee__name">Christopher Campbell</figcaption>
+                    <p class="employee__position">Branding UX design</p>
                 </figure>
-                <figure class="main-our-team__row__col-4-12 col-4-12">
-                    <div class="main-our-team__row__col-4-12__photo">
-                        <div class="main-our-team__row__col-4-12__photo-hover photo-hover">
-                            <div class="main-our-team__row__col-4-12__photo-hover__icons">
-                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <figure class="employee">
+                    <div class="employee__photo">
+                        <div class="photo-hover">
+                            <div class="photo-hover__icons">
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                                </a>
+                                <a class="photo-hover__link" href="#">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
-                        <div class="main-our-team__row__col-4-12__photo-image-3"></div>
+                        <div class="employee__photo-image-3"></div>
                     </div>
-                    <figcaption>Michael Fertig</figcaption>
-                    <p>Developer</p>
+                    <figcaption class="employee__name">Michael Fertig</figcaption>
+                    <p class="employee__position">Developer</p>
                 </figure>
             </div>
             <div class="main-our-team-signatures">
@@ -301,143 +402,144 @@
     <!-- end main-our-team -->
     <section class="main-projects" id="work">
         <div class="container">
-            <header class="main-projects__header header">
-                <h3 class="main-projects__header__title header__title">What we do</h3>
-                <h2 class="main-projects__header__header header__header">some of our projects</h2>
-                <p class="main-projects__header__text header__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
+            <header class="header">
+                <h3 class="header__title">What we do</h3>
+                <h2 class="header__header">some of our projects</h2>
+                <p class="header__text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. Autem doloremque dolores eligendi explicabo minima quo sequi tenetur voluptatum. Aliquid
+                    cumque deleniti dicta esse, libero nostrum quisquam? Deleniti esse quibusdam sequi.</p>
             </header>
         </div>
-        <div class="main-projects__row-3-12 row-3-12">
-            <div class="main-projects__row-3-12__col-3-12 col-3-12">
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-1">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+        <div class="main-projects__row row-3-12">
+            <div class="main-projects__col">
+                <div class="main-projects__image-1 col__half-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
+                    </div>
                 </div>
-            </div>
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-2">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+                <div class="main-projects__image-2 col__half-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
             </div>
-            <div class="main-projects__row-3-12__col-3-12 col-3-12">
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-3">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+            <div class="main-projects__col">
+                <div class="main-projects__image-3 col__half-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-4">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
+                <div class="main-projects__col">
+                    <div class="main-projects__image-4 col__half-height">
+                        <div class="photo-hover">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
+                            <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="main-projects__row-3-12__col-3-12 col-3-12">
-                <div class="main-projects__row-3-12__col-3-12__all-height">
-                    <div class="main-projects__row-3-12__col-3-12__image-5">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+            <div class="main-projects__col">
+                <div class="main-projects__image-5 col__full-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
             </div>
-            <div class="main-projects__row-3-12__col-3-12 col-3-12">
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-6">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+            <div class="main-projects__col">
+                <div class="main-projects__image-6 col__half-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-                <div class="main-projects__row-3-12__col-3-12__half-height">
-                    <div class="main-projects__row-3-12__col-3-12__half-height-image-7">
-                        <div class="main-projects__row-3-12__col-3-12__photo-hover photo-hover">
-                            <i class="fa fa-picture-o" aria-hidden="true"></i>
-                            <h6>creativly designed</h6>
-                            <p>Lorem ipsum dolor sit.</p>
-                        </div>
+                <div class="main-projects__image-7 col__half-height">
+                    <div class="photo-hover">
+                        <i class="fa fa-picture-o" aria-hidden="true"></i>
+                        <h6 class="photo-hover__title">creativly designed</h6>
+                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="main-projects__quotation">
-                <button><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
-                <div class="main-projects_quotation-photo"></div>
-                <div class="main-projects__quotation__text">
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, beatae culpa eaque enim et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero molestias non omnis provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, magnam."</p>
-                    <h6>John Doe</h6>
+            <div class="main-projects__slider slider">
+                <button class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="slide-track">
+                    <div class="slide">
+                        <div class="slide__icon"></div>
+                        <div class="slide__text-box">
+                            <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, beatae culpa eaque enim
+                                et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero molestias non omnis
+                                provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Error, magnam."</p>
+                            <h6 class="slide__author">John Doe</h6>
+                        </div>
+                    </div>
                 </div>
-                <button><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
     <!-- end main-projects -->
     <section class="main-clients">
         <div class="container">
-            <header class="main-clients__header header">
-                <h3 class="main-clients__header__title header__title">Happy Clients</h3>
-                <h2 class="main-clients__header__header header__header">what people say</h2>
+            <header class="header">
+                <h3 class="header__title">Happy Clients</h3>
+                <h2 class="header__header">what people say</h2>
             </header>
-            <div class="main-clients__row-6-12 row-6-12">
-                <div class="main-clients__row__col-6-12 col-6-12">
-                    <div class="main-clients__row__col-6-12__photo-box">
-                        <img src="./images/clients/user4.jpg" alt="">
+            <div class="main-clients__row row-6-12">
+                <div class="client">
+                    <div class="main-clients__photo-box">
+                        <img class="client__photo" src="./images/clients/user4.jpg" alt="">
                     </div>
-                    <div class="main-clients__row__col-6-12__text">
-                        <h4>Matthew Dix</h4>
-                        <h6>Graphic Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam delectus dolore iure maiores quas quisquam, reprehenderit sunt?</p>
-                    </div>
-                </div>
-                <div class="main-clients__row__col-6-12 col-6-12">
-                    <div class="main-clients__row__col-6-12__photo-box">
-                        <img src="./images/clients/user1.jpg" alt="">
-                    </div>
-                    <div class="main-clients__row__col-6-12__text">
-                        <h4>Nick Karvounis</h4>
-                        <h6>Graphic Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque consequatur magni neque quae quibusdam quis tempora tempore!</p>
+                    <div class="main-clients__text">
+                        <h4 class="client__name">Matthew Dix</h4>
+                        <h6 class="client__position">Graphic Design</h6>
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam delectus dolore iure
+                            maiores quas quisquam, reprehenderit sunt?</p>
                     </div>
                 </div>
-                <div class="main-clients__row__col-6-12 col-6-12">
-                    <div class="main-clients__row__col-6-12__photo-box">
-                        <img src="./images/clients/user2.jpg" alt="">
+                <div class="client">
+                    <div class="main-clients__photo-box">
+                        <img class="client__photo" src="./images/clients/user1.jpg" alt="">
                     </div>
-                    <div class="main-clients__row__col-6-12__text">
-                        <h4>Jaelyyn Castillo</h4>
-                        <h6>Graphic Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio doloribus iusto libero quas ullam voluptatem.</p>
+                    <div class="main-clients__text">
+                        <h4 class="client__name">Nick Karvounis</h4>
+                        <h6 class="client__position">Graphic Design</h6>
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque consequatur magni neque
+                            quae quibusdam quis tempora tempore!</p>
                     </div>
                 </div>
-                <div class="main-clients__row__col-6-12 col-6-12">
-                    <div class="main-clients__row__col-6-12__photo-box">
-                        <img src="./images/clients/user3.jpg" alt="">
+                <div class="client">
+                    <div class="main-clients__photo-box">
+                        <img class="client__photo" src="./images/clients/user2.jpg" alt="">
                     </div>
-                    <div class="main-clients__row__col-6-12__text">
-                        <h4>Mike Petrucci</h4>
-                        <h6>Graphic Design</h6>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio doloribus iusto libero quas ullam voluptatem.</p>
+                    <div class="main-clients__text">
+                        <h4 class="client__name">Jaelyyn Castillo</h4>
+                        <h6 class="client__position">Graphic Design</h6>
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio
+                            doloribus iusto libero quas ullam voluptatem.</p>
+                    </div>
+                </div>
+                <div class="client">
+                    <div class="main-clients__photo-box">
+                        <img class="client__photo" src="./images/clients/user3.jpg" alt="">
+                    </div>
+                    <div class="main-clients__text">
+                        <h4 class="client__name">Mike Petrucci</h4>
+                        <h6 class="client__position">Graphic Design</h6>
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio
+                            doloribus iusto libero quas ullam voluptatem.</p>
                     </div>
                 </div>
             </div>
@@ -446,71 +548,71 @@
     <!-- end main-clients -->
     <article class="main-blog" id="blog">
         <div class="container">
-            <header class="main-blog__header header">
-                <h3 class="main-blog__header__title header__title">Our stories</h3>
-                <h2 class="main-blog__header__header header__header">latest blog</h2>
+            <header class="header">
+                <h3 class="header__title">Our stories</h3>
+                <h2 class="header__header">latest blog</h2>
             </header>
-            <div class="main-blog__row-4-12 row-4-12">
-                <figure class="main-blog__row__col-4-12 col-4-12">
-                    <div class="main-blog__row__col-4-12__image">
-                        <img src="./images/blog/Bez-nazwy-4.jpg" alt="">
-                        <time class="main-blog__row__col-4-12__image-date">
+            <div class="main-blog__row row-4-12">
+                <figure class="blog">
+                    <div class="blog__image-box">
+                        <img class="blog__image" src="./images/blog/Bez-nazwy-4.jpg" alt="">
+                        <time class="blog__published-date">
                             <strong>16</strong>
                             <span>Jan</span>
                         </time>
                     </div>
-                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
-                    <div class="main-blog__row__col-4-12__notes">
-                        <div class="main-blog__row__col-4-12__notes__views">
+                    <figcaption class="blog__title">Lorem ipsum dolor sit amet</figcaption>
+                    <p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero.</p>
+                    <div class="blog__followers">
+                        <div class="blog__views">
                             <i class="fa fa-eye" aria-hidden="true"></i>
-                            <p>542</p>
+                            <p class="views__count">542</p>
                         </div>
-                        <div class="main-blog__row__col-4-12__notes__comments">
+                        <div class="blog__comments">
                             <i class="fa fa-commenting" aria-hidden="true"></i>
-                            <p>17</p>
+                            <p class="comments__count">17</p>
                         </div>
                     </div>
                 </figure>
-                <figure class="main-blog__row__col-4-12 col-4-12">
-                    <div class="main-blog__row__col-4-12__image">
-                        <img src="./images/blog/Bez-nazwy-1.jpg" alt="">
-                        <time class="main-blog__row__col-4-12__image-date">
+                <figure class="blog">
+                    <div class="blog__image-box">
+                        <img class="blog__image" src="./images/blog/Bez-nazwy-1.jpg" alt="">
+                        <time class="blog__published-date">
                             <strong>15</strong>
                             <span>Jan</span>
                         </time>
                     </div>
-                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, officia?</p>
-                    <div class="main-blog__row__col-4-12__notes">
-                        <div class="main-blog__row__col-4-12__notes__views">
+                    <figcaption class="blog__title">Lorem ipsum dolor sit amet</figcaption>
+                    <p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, officia?</p>
+                    <div class="blog__followers">
+                        <div class="blog__views">
                             <i class="fa fa-eye" aria-hidden="true"></i>
-                            <p>992</p>
+                            <p class="views__count">992</p>
                         </div>
-                        <div class="main-blog__row__col-4-12__notes__comments">
+                        <div class="blog__comments">
                             <i class="fa fa-commenting" aria-hidden="true"></i>
-                            <p>45</p>
+                            <p class="comments__count">45</p>
                         </div>
                     </div>
                 </figure>
-                <figure class="main-blog__row__col-4-12 col-4-12">
-                    <div class="main-blog__row__col-4-12__image">
-                        <img src="./images/blog/Bez-nazwy-5.jpg" alt="">
-                        <time class="main-blog__row__col-4-12__image-date">
+                <figure class="blog">
+                    <div class="blog__image-box">
+                        <img class="blog__image" src="./images/blog/Bez-nazwy-5.jpg" alt="">
+                        <time class="blog__published-date">
                             <strong>14</strong>
                             <span>Jan</span>
                         </time>
                     </div>
-                    <figcaption>Lorem ipsum dolor sit amet</figcaption>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, provident!</p>
-                    <div class="main-blog__row__col-4-12__notes">
-                        <div class="main-blog__row__col-4-12__notes__views">
+                    <figcaption class="blog__title">Lorem ipsum dolor sit amet</figcaption>
+                    <p class="blog__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, provident!</p>
+                    <div class="blog__followers">
+                        <div class="blog__views">
                             <i class="fa fa-eye" aria-hidden="true"></i>
-                            <p>1125</p>
+                            <p class="views__count">1125</p>
                         </div>
-                        <div class="main-blog__row__col-4-12__notes__comments">
+                        <div class="blog__comments">
                             <i class="fa fa-commenting" aria-hidden="true"></i>
-                            <p>91</p>
+                            <p class="comments__count">91</p>
                         </div>
                     </div>
                 </figure>
@@ -521,8 +623,8 @@
     <section class="main-map">
         <div class="main-map__background">
             <div class="container">
-                <header class="main-map__background__header header">
-                    <h3 class="main-map__background__header__title header__title">
+                <header class="header header--red">
+                    <h3 class="header__title header__title--map-marker">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                     </h3>
                     <h2 class="main-map__background__header__header header__header">open map</h2>
@@ -530,21 +632,27 @@
             </div>
         </div>
         <div class="container">
-            <div class="main-map__row-4-12 row-4-12">
-                <div class="main-map__row__col-4-12 col-4-12">
-                    <h3>MoGo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi facere fugit inventore magni officia quia quis quos sequi vel. Dolores eaque, eius eum hic molestiae molestias repudiandae vero voluptatem. Architecto dolore incidunt ipsum, laborum mollitia numquam quisquam quos saepe.</p>
-                    <h5><strong>15k</strong> followers</h5>
-                    <div class="main-map__row__col-4-12__icons">
-                        <h6>Follow us:</h6>
-                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+            <div class="main-map__row row-4-12">
+                <div class="main-map__col follow-us">
+                    <h3 class="follow-us__title">MoGo</h3>
+                    <p class="follow-us__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi facere fugit inventore
+                        magni officia quia quis quos sequi vel. Dolores eaque, eius eum hic molestiae molestias
+                        repudiandae vero voluptatem. Architecto dolore incidunt ipsum, laborum mollitia numquam
+                        quisquam quos saepe.</p>
+                    <h5 class="follow-us__followers">
+                        <strong>15k</strong> 
+                        followers
+                    </h5>
+                    <div class="follow-us__icons">
+                        <h6 class="icons__title">Follow us:</h6>
+                        <a class="follow-us__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
                     </div>
                     <form action="" class="main-map__row__col-4-12__form">
                         <label for="email" class="visuallyhidden">Your email</label>
@@ -553,8 +661,8 @@
                     </form>
                 </div>
                 <div class="main-map__row__col-4-12">
-                    <div class="main-map__row__col-4-12__cnt">
-                        <h4 class="main-map__row__col-4-12__cnt__title">blogs</h4>
+                    <div class="main-map__col">
+                        <h4 class="col__title footer-blogs__title">blogs</h4>
                         <div class="main-map__row__col-4-12__cnt__blog">
                             <div class="main-map__row__col-4-12__cnt__blog-image">
                                 <img src="./images/map/blog1.jpg" alt="">
@@ -579,7 +687,7 @@
                     </div>
                 </div>
                 <div class="main-map__row__col-4-12">
-                    <h4 class="main-map__row__col-4-12__title">instagram</h4>
+                    <h4 class="col__title">instagram</h4>
                     <ul class="main-map__row__col-4-12__row-4-12 row-4-12">
                         <li><img src="./images/map/instagram1.jpeg" alt=""></li>
                         <li><img src="./images/map/instagram2.jpg" alt=""></li>
@@ -626,4 +734,5 @@
     <!-- end main-footer -->
     <script src="js/script.min.js"></script>
 </body>
+
 </html>

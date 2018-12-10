@@ -3,8 +3,36 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top:0;
+  top: 0;
   left: 0;
   box-shadow: 10px 10px 0px 0 #95e1d3;
   color: $onGradientColor;
+  opacity: 0;
+  transition: 0.5s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.photo-hover__title {
+  text-transform: uppercase;
+  font-family: $headerFont;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.photo-hover>.fa {
+  font-size: 18px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.photo-hover__text {
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }

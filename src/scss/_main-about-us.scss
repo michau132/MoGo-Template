@@ -1,4 +1,4 @@
-.main-about-us__header__row__col-4-12{
+.main-about-us__col{
   height: 255px;
   width: 100%;
   position: relative;
@@ -8,43 +8,21 @@
     height: 400px;
   }
 }
-.main-about-us__header__row__col-4-12__photo-hover {
-  opacity: 0;
-  transition: 0.5s all;
-}
-.main-about-us__header__row__col-4-12__photo-hover p {
-  text-transform: uppercase;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-family: $headerFont;
-  font-size: 18px;
-  font-weight: bold;
-  color: #fff;
-  text-align: center;
-}
-.main-about-us__header__row__col-4-12__photo-hover > .fa {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 18px;
-  color: #fff;
-  }
 
-.main-about-us__header__row__col-4-12:hover .main-about-us__header__row__col-4-12__photo-hover {
+
+
+.main-about-us__col:hover .main-about-us__photo-hover {
   opacity: 1;
 
 }
-.main-about-us__header__row__col-4-12__image{
+.main-about-us__img{
   height: 100%;
 }
 
-.main-about-us__box {
+.main-about-us__counters {
   background-color: $shadowColor;
 }
-.main-about-us__row-numbers__col-5-12 {
+.counters__col {
   color: $onGradientColor;
   text-align: center;
   border-left: 0.5px solid $onGradientColor;
@@ -64,11 +42,11 @@
     border-left: none;
   }
 }
-.main-about-us__row-numbers__col-5-12 h4 {
+.counters__count {
   font-size: 50px;
   font-weight: bold;
   padding-bottom: 15px;
 }
-.main-about-us__row-numbers__col-5-12 p {
+.counters__desc {
   text-transform: uppercase;
 }

@@ -1,5 +1,5 @@
 
-.main-page__header {
+.navigation {
   position: fixed;
   display: flex;
   justify-content: space-between;
@@ -13,14 +13,14 @@
 }
 
 
-.main-page__header__nav {
+.navigation__nav {
   margin-right: 4%;
 }
-.main-page__header__nav__logo a,
-.main-page__header__nav__navigation a{
+.logo__link,
+.navigation__link{
   @include stylingLinks;
 }
-.main-page__header__nav__logo a {
+.logo__link {
   font-family: $headerFont;
   font-weight: bold;
   font-size:30px;
@@ -29,7 +29,7 @@
   left: 5%;
   z-index: 210;
 }
-.main-page__header__nav__navigation {
+.navigation__list {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(7, 1fr);
@@ -40,7 +40,7 @@
     display: none;
   }
 }
-.main-page__header__nav__navigation a {
+.navigation__link {
   position: relative;
   transition: 0.5s all;
 
@@ -74,7 +74,7 @@
 }
 
 /* hamburger */
-.main-page__header__nav__hamburger {
+.navigation__mobile {
   display: none;
   .menu {
     position: absolute;

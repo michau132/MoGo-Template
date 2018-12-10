@@ -8,26 +8,8 @@
   background-position: center center;
   margin-bottom: 70px;
 }
-.main-map__background__header {
-  color: #f38181;
-}
-.main-map__background__header__title > .fa {
-  font-size: 30px;
-  position: relative;
 
-  &:after {
-    content: '';
-    position: absolute;
-    top: 36%;
-    left: 49.7%;
-    width:4.5px;
-    height: 4.5px;
-    background-color: #f38181;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-  }
-}
-.main-map__row-4-12 {
+.main-map__row {
   display: grid;
   grid-template-columns: 40% 30% 20%;
   min-height: 380px;
@@ -38,7 +20,7 @@
     
   }
 }
-.main-map__row__col-4-12 {
+.main-map__col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -49,7 +31,7 @@
     justify-content: center;
   }
 }
-.main-map__row__col-4-12 h3 {
+.follow-us__title {
   font-family: $headerFont;
   font-size: 30px;
   font-weight: bold;
@@ -59,7 +41,7 @@
     margin-bottom: 15px;
   }
 }
-.main-map__row__col-4-12 p {
+.follow-us__desc {
   font-family: $textFont;
   color: $textColor;
   
@@ -68,34 +50,34 @@
     text-align: center;
   }
 }
-.main-map__row__col-4-12 h5 {
+.follow-us__followers {
   font-family: $headerFont;
   @media (max-width: $mediumDevices) {
     margin-bottom: 15px;
   }
 }
-.main-map__row__col-4-12 h5 strong {
+.follow-us__followers strong {
   font-weight: bold;
 }
-.main-map__row__col-4-12__icons {
+.follow-us__icons {
   padding-top: 20px;
   border-top: 1px solid $textColor;
   @media (max-width: $mediumDevices) {
     margin-bottom: 15px;
   }
 }
-.main-map__row__col-4-12__icons h6 {
+.icons__title {
   font-family: $textFont;
   font-style: italic;
   display: inline-block;
   padding-right: 5px;
 }
-.main-map__row__col-4-12__icons a {
+.follow-us__link {
   padding: 0 5px;
   color: $shadowColor;
   text-decoration: none;
 }
-.main-map__row__col-4-12__icons a > .fa {
+.follow-us__link > .fa {
   transition: 0.5s all;
 
   &:hover {
@@ -131,9 +113,7 @@
   padding: 8px 15px;
 }
 
-.main-map__row__col-4-12__cnt  {}
-.main-map__row__col-4-12__cnt__title,
-.main-map__row__col-4-12__title {
+.col__title {
   font-family: $headerFont;
   text-transform: uppercase;
   margin-bottom: 15px;
