@@ -119,7 +119,7 @@
     display: none;
   }
   input:checked + .menu {
-    box-shadow: 0 0 0 100vw #f38181, 0 0 0 100vh #f38181;
+    box-shadow: 0 0 0 100vw #f38181, 0 0 0 150vh #f38181;
     border-radius: 0;
     .hamburger {
       transform: rotate(45deg);
@@ -132,7 +132,6 @@
         top: 0;
       }
     }
-
   }
 
   input:checked + .menu + ul {

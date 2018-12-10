@@ -6,7 +6,7 @@ function lightbox() {
     const opacity = 0.2;
     const next = document.querySelector('.next');
     const prev = document.querySelector('.prev');
-    const navSticky = document.querySelector('.main-page__header');
+    const navSticky = document.querySelector('.navigation');
     const scrollBtn = document.querySelector('.scrollTop');
     let indeks ;
 
