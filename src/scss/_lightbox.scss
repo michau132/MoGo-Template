@@ -1,4 +1,4 @@
-.main-map__row__col-4-12__row-4-12 {
+.lightbox__row {
   height: 272px;
   grid-gap: 2px;
   list-style: none;
@@ -10,51 +10,111 @@
     grid-template-columns: repeat(3, 1fr);
     height: initial;
   }
+
   @media (max-width: $smallDevices) {
     grid-template-columns: repeat(3, 1fr);
     height: initial;
   }
 }
-.main-map__row__col-4-12__row-4-12 li {
-  display: inline-block;
-}
-.main-map__row__col-4-12__row-4-12 li img {
-  height: 90px;
-  transition: 0.3s;
-  cursor: pointer;
 
-  &:hover{
+.lightbox__item {
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s transform;
+  height: 90px;
+  overflow: hidden;
+
+  &:hover {
     transform: scale(1.2);
   }
 }
 
+.lightbox__image {
+  object-fit: fit-content;
+}
+
 /* The Modal (background) */
 .modal {
-  display: none;
   position: fixed;
-  z-index: 1;
-  padding-top: 50px;
+  z-index: 2;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: black;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  transition: all 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transform: scale(0);
+}
+
+.modal.isOpen {
+  transform: scale(1);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 /* Modal Content */
-.modal-content {
+.modal__content {
   position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
   max-width: 1200px;
-  min-height: 500px;
-  max-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
+  padding: 40px;
+  background-color: black;
+}
+
+.modal__caption {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  height: 450px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+
+.column-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-gap: 10px;
+  grid-template-rows: 100px;
+  background: black;
+  
+
+  @media (max-width: 1086px) {
+    overflow-x: scroll;
+  }
+  
+  &::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+
+
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+  }
+}
+
+.column__image {
+  max-width: 100%;
+  max-height: 100%;
+  min-width: 100px;
+  max-width: 150px;
+  cursor: pointer;
 }
 
 /* The Close Button */
@@ -65,24 +125,26 @@
   right: 25px;
   font-size: 35px;
   font-weight: bold;
+  z-index: 5;
+  width: 35px;
+  transition: 0.3s background-color;
+  border-radius: 4px;
 }
 
 .close:hover,
 .close:focus {
-  color: #999;
+  background-color: #999;
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 .cursor {
   cursor: pointer
 }
 
 /* Next & previous buttons */
-.prev,
-.next {
+.modal__prev,
+.modal__next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -97,35 +159,41 @@
   user-select: none;
   -webkit-user-select: none;
 }
-.prev {
+
+.modal__prev {
   left: 0;
 }
+
 /* Position the "next button" to the right */
-.next {
+.modal__next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-#caption {
-  max-height: 450px;
-  min-height: 450px;
+.modal__prev:hover,
+.modal__next:hover {
+  background-color: rgba(110, 110, 110, 0.8);
 }
 
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
+#caption {
+  object-fit: contain;
 }
-.column-container {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-gap: 10px;
-  grid-template-rows: 100px;
-  background: black;
+
+
+
+
+.containerImg,
+.column__image {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.containerImg.fadeOut {
+  opacity: 0;
+}
+
+.column__image.selected {
+  transition: 0.2s;
+  opacity: 0.2;
 }

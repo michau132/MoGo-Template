@@ -8,36 +8,41 @@
 }
 .main-what-we-do__col {
   height: 100%;
-
+  
 }
 .main-what-we-do__col:last-of-type {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: 0.3s all;
 }
 .first-col__img{
   height: 390px;
   display: block;
 }
-.main-what-we-do__row__col-6-12__metier {
-  margin-bottom: 20px;
 
-  &:last-of-type {
-    margin-bottom: 0;
+
+.metier__banner {
+  display: grid;
+  grid-template-columns: 10% 85% 5%;
+  grid-row: unset;
+  border: 1px solid rgba($textColor, 0.5);
+  position: relative;
+  cursor: pointer;
+  
+  @media (max-width: $extraSmallDevices) {
+    grid-template-columns: 15% 75% 10%;
   }
 }
-
-.metier__text {
-  font-family: $textFont;
-  font-style: italic;
-  color: $textColor;
-  margin: 15px 15px;
-  line-height: 25px;
+.metier__box-text {
+  border: 1px solid rgba($textColor, 0.5);
+  border-top: 0;
   overflow-y: scroll;
-  height: 160px;
-  transition: all .2s ease-out;
-  position: relative;
-
+  transition: transform 0.3s, -webkit-transform 0.3s, height 0.3s;
+  transform-origin: top left;
+  transform: scaleY(0);
+  height: 0;
+  
   &::-webkit-scrollbar {
     width: 6px;
     color: $shadowColor;
@@ -53,18 +58,27 @@
     border-radius: 10px;
   }
 }
-.metier__banner {
-  display: grid;
-  grid-template-columns: 10% 90%;
-  grid-row: unset;
-  border: 1px solid rgba($textColor, 0.5);
-  position: relative;
+
+.metier.visible > .metier__box-text{
+  transform: scaleY(1);
+  height: 160px;
+  padding: 15px 15px;
 }
+
+
+.metier__text {
+  font-family: $textFont;
+  font-style: italic;
+  color: $textColor;
+  line-height: 25px;
+}
+
 .fa-angle-down {
-  position: absolute;
-  top: 25%;
-  left: 95%;
   font-size: 25px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .metier__banner > .fa,
 .metier__title {
@@ -84,31 +98,8 @@
   transform: rotate(90deg);
 }
 
-.metier__box-text {
-  border: 1px solid rgba($textColor, 0.5);
-  border-top: 0;
-}
-.metier__box-text.visible,
-.metier__box-text.hidden {
-  overflow: hidden;
-}
-.metier__box-text.visible {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 1s linear;
-}
-.metier__box-text.hidden {
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s 0.5s, opacity 0.5s linear;
-}
 
-.metier__box-text.hidden p {
-  margin-top: -10000px;
-  transition: margin-top 0s 0.5s;
-}
-
-.up {
+.metier.visible .fa-angle-down {
   transform: rotate(180deg);
 }
 

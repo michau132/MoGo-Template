@@ -22,8 +22,17 @@
   width: 150px;
   height: 320px;
   box-shadow: 0px 25px 15px -18px rgba(229,229,229,0.71);
+  
+  @media(max-width: 600px) {
+    width: 120px;
+    height: 260px;
+    left: 77%;
+    top: 51%;
+  }
+  @media(max-width: 474px) {
+    display: none
+  }
 }
 .phone-image__img {
-  display: block;
-  height: 100%;
+  object-fit: cover;
 }

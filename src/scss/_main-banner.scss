@@ -33,6 +33,9 @@
   @media (max-width: 530px) {
     font-size: 80px;
   }
+  @media (max-width: 422px) {
+    font-size: 60px;
+  }
 }
 .main-page__main-banner-btn {
   @include stylingLinks;

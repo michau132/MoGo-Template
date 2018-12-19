@@ -3,8 +3,10 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 120px;
+  overflow: hidden;
 }
+
+
 
 .slide__icon {
   width: 220px;
@@ -15,6 +17,10 @@
   border-radius: 50%;
   overflow: hidden;
   margin-left: 15px;
+  
+  @media (max-width: $smallDevices) {
+    margin-bottom: 20px;
+  }
 }
 
 
@@ -35,6 +41,11 @@
   cursor: pointer;
   background: none;
   border: none;
+  padding: 40px 15px;
+  
+  @media (max-width: $extraSmallDevices) {
+    padding: 40px 10px;
+  }
 
   &:focus {
     outline: none;
@@ -48,7 +59,17 @@
   display: flex;
   align-items: center;
   height: 100%;
+  transition: 1s all;
+  
+  @media (max-width: $smallDevices) {
+    flex-direction: column;
+  }
 }
+.slide.isActive {
+  opacity: 1;
+}
+
+
 .slide > .fa-comments {
   color: $shadowColor;
   font-size: 70px;
@@ -70,6 +91,10 @@
   flex-direction: column;
   justify-content: center;
 
+  @media (max-width: $mediumDevices) {
+    padding-right: 30px;
+  }
+  
   @media (max-width: $smallDevices) {
     padding-right: 10px;
     padding-left: 0;

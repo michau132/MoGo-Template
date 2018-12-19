@@ -1,4 +1,4 @@
-function stickyNavBar() {
+export default function stickyNavBar() {
     const navSticky = document.querySelector('.navigation');
 
     window.addEventListener('scroll', function () {
@@ -10,4 +10,3 @@ function stickyNavBar() {
 
     });
 }
-export {stickyNavBar};

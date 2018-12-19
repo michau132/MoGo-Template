@@ -1,20 +1,20 @@
-function arrowUp() {
-    const arrow = document.querySelectorAll('.fa-angle-down');
+export default function arrowUp() {
+    const parentMetier = document.querySelector('#whatWeDo');
+    const allMetiers = Array.from(parentMetier.children)
+    const banners = Array.from(parentMetier.querySelectorAll('.metier__banner'));
+    let prevIndex = 0;
+    banners.forEach((banner, index) => {
 
-    arrow.forEach(item => {
-
-        return item.addEventListener('click', function () {
-            if ( this.parentElement.parentElement.lastElementChild.classList.contains('hidden') ) {
-                this.parentElement.parentElement.lastElementChild.classList.remove('hidden');
-                this.parentElement.parentElement.lastElementChild.classList.add('visible');
-                this.classList.add('up');
-            } else {
-                this.parentElement.parentElement.lastElementChild.classList.add('hidden');
-                this.parentElement.parentElement.lastElementChild.classList.remove('visible');
-                this.classList.remove('up');
+        banner.addEventListener('click',() => {
+            const text = allMetiers[index];
+            const isAllElementsAreHidden = allMetiers.every(item => !item.classList.contains('visible'))
+            if(allMetiers[prevIndex].classList.contains('visible')) {
+                allMetiers[prevIndex].classList.remove('visible')
             }
-
+            if(prevIndex !== index || isAllElementsAreHidden) {
+                text.classList.add('visible')
+            }
+            prevIndex = index;
         })
     })
 }
-export {arrowUp};

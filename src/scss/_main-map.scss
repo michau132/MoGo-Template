@@ -1,5 +1,6 @@
 .main-map {
   margin-bottom: 50px;
+  overflow: hidden;
 }
 .main-map__background {
   background-image: linear-gradient(rgba(#fff,0.8), rgba(#fff,0.9)),
@@ -118,7 +119,7 @@
   text-transform: uppercase;
   margin-bottom: 15px;
 }
-.main-map__row__col-4-12__cnt__blog {
+.footer-blogs__item {
   display: grid;
   grid-template-areas:  "a b"
                         "a c";
@@ -129,19 +130,19 @@
     margin: 0;
   }
 }
-.main-map__row__col-4-12__cnt__blog-image {
+.item-blog__image {
   width: 120px;
   height: 80px;
   grid-area: a;
 }
-.main-map__row__col-4-12__cnt__blog h5 {
+.item-blog__title {
   grid-area: b;
   margin-top: 15px;
   text-transform: uppercase;
   font-family: $headerFont;
   font-size: 13px;
 }
-.main-map__row__col-4-12__cnt__blog time {
+.item-blog__published {
   grid-area: c;
   font-family: $textFont;
   font-style: italic;

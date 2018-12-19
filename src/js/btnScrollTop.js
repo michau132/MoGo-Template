@@ -1,7 +1,7 @@
-function btnScrollTop() {
+export default function btnScrollTop() {
     const scrollBtn = document.querySelector('.scrollTop');
     window.addEventListener('scroll', function () {
-        if(window.scrollY > 510) {
+        if(window.scrollY > 510 && window.innerWidth > 500) {
             scrollBtn.style.display = 'block';
             scrollBtn.classList.remove('zoomOutDown');
         } else {
@@ -29,16 +29,12 @@ function btnScrollTop() {
         };
         animateScroll();
     }
-
-//t = current time
-//b = start value
-//c = change in value
-//d = duration
-    Math.easeInOutQuad = function (t, b, c, d) {
-        t /= d/2;
-        if (t < 1) return c/2*t*t + b;
-        t--;
-        return -c/2 * (t*(t-2) - 1) + b;
+    
+    Math.easeInOutQuad = function (currentTime, startValue, changeInValue, duration) {
+        currentTime /= duration/2;
+        if (currentTime < 1) return changeInValue/2*currentTime*currentTime + startValue;
+        currentTime--;
+        return -changeInValue/2 * (currentTime*(currentTime-2) - 1) + startValue;
     };
 }
 export {btnScrollTop};

@@ -1,97 +1,74 @@
-function lightbox() {
-    const gallery = document.querySelectorAll('.main-map__row__col-4-12__row-4-12 li');
-    const closeBtn = document.querySelector('.close.cursor');
-    const cntImg = document.querySelector('#caption');
-    const allViewImg = document.querySelectorAll('.column-container img');
-    const opacity = 0.2;
-    const next = document.querySelector('.next');
-    const prev = document.querySelector('.prev');
-    const navSticky = document.querySelector('.navigation');
-    const scrollBtn = document.querySelector('.scrollTop');
-    let indeks ;
-
-    function openModal() {
-        //opening lightbox
-        document.getElementById('myModal').style.display = "block";
-
-        //giving to navbar and button position relative to not bothering us
-        navSticky.style.position = 'relative';
-        scrollBtn.style.position = 'relative';
+export default class Lightbox {
+    constructor(gallery) {
+        this.closeModal = this.closeModal.bind(this);
+        this.gallery = [...gallery.querySelectorAll('.lightbox__item')];
+        this.closeBtn = gallery.querySelector('.close.cursor');
+        this.containerImg = gallery.querySelector('.containerImg');
+        this.allImages = gallery.querySelectorAll('.column__image');
+        this.next = gallery.querySelector('.next');
+        this.prev = gallery.querySelector('.prev');
+        this.modal = document.getElementById('myModal');
+        this.navSticky = document.querySelector('.navigation');
+        this.scrollBtn = document.querySelector('.scrollTop');
+        this.bodyStyle = document.querySelector('body');
+        this.indeks = 0; 
+        this.initOpenModal();
     }
-    function closeModal() {
-        //closing lightbox
-        document.getElementById('myModal').style.display = "none";
-
-        //giving to navbar and button position fixed to show it
-        navSticky.style.position = "fixed";
-        scrollBtn.style.position = "fixed";
-    }
-    function loopAllImgs(img, ind) {
-        //setting to targeted in caption-contaier img an opacity
-        if (cntImg.src === img.src) {
-            img.style.opacity = opacity;
-        }
-
-        //setting event to change photo in caption-container
-        //and column-container opacity to selected img
-        img.addEventListener('click', function (e) {
-            allViewImg.forEach(img => (img.style.opacity = 1));
-            cntImg.src = e.target.src;
-            this.style.opacity = opacity;
-            indeks = ind;
+    
+    initOpenModal() {
+        this.allImages.forEach((img, indeks) => img.addEventListener('click', () => this.changePhoto(indeks)));
+        this.next.addEventListener('click', () => this.changePhoto(this.indeks + 1));
+        this.prev.addEventListener('click', () => this.changePhoto(this.indeks - 1));
+        this.closeBtn.addEventListener('click', this.closeModal);
+        this.gallery.forEach((photo, i) => {
+            photo.addEventListener('click', (e) => {
+                //opening lightbox
+                this.openModal();
+                this.containerImg.src = e.target.src;
+                this.indeks = i;
+                this.allImages[i].classList.add('selected')
+            })
         })
     }
-    function nextElement() {
 
-        //reseting all column-container opacity
-        allViewImg.forEach(img => (img.style.opacity = 1));
-        indeks = indeks + 1;
-        if (indeks == allViewImg.length) {
-            indeks = 0;
-        }
-
-        //setting img to caption-container and to column-container opacity
-        cntImg.src = allViewImg[indeks].src;
-        allViewImg[indeks].style.opacity = opacity;
+    openModal() {
+        //opening lightbox
+        this.modal.classList.add('isOpen')
+        
+        //hiding scroll on body
+        this.bodyStyle.style.overflow = 'hidden';
+        
+        //giving to navbar and button position relative to not bothering us
+        this.navSticky.style.position = 'relative';
+        this.scrollBtn.style.position = 'relative';
     }
-    function previousElement() {
-        //reseting all column-container opacity
-        allViewImg.forEach(img => (img.style.opacity = 1));
-
-        if (indeks == 0) {
-            indeks = allViewImg.length;
-        }
-        indeks = indeks - 1;
-
-        //setting img to caption-container and to column-container opacity
-        cntImg.src = allViewImg[indeks].src;
-        allViewImg[indeks].style.opacity = opacity;
+    closeModal() {
+        //closing lightbox
+        this.modal.classList.remove('isOpen');
+        this.allImages[this.indeks].classList.remove('selected');
+        //giving to navbar and button position fixed to show it
+        this.navSticky.style.position = "fixed";
+        this.scrollBtn.style.position = "fixed";
+        this.bodyStyle.style.overflow = "auto";
     }
-
-    gallery.forEach((photo, i) => {
-        photo.addEventListener('click', function (e) {
-            //opening lightbox
-            openModal();
-
-
-
-            //setting which photo would be opended in container
-            cntImg.src = e.target.src;
-
-            //getting photo indeks from array
-            indeks = i;
-
-            //loop through all images at gallery (they are showing at the bottom of
-            //lightbox
-            allViewImg.forEach(loopAllImgs);
-
-            //add event to close lightbox
-            closeBtn.addEventListener('click', closeModal);
-
-            //add to buttons previous next events
-            next.addEventListener('click', nextElement);
-            prev.addEventListener('click', previousElement);
-    })
-})
+    changePhoto(index) {
+        console.log(this.indeks)
+        this.allImages[this.indeks].classList.remove('selected')
+        this.indeks = index;
+        this.containerImg.classList.add('fadeOut');
+        //reseting all column-container opacity
+        if (this.indeks == this.allImages.length) {
+            this.indeks = 0;
+        }
+        if (this.indeks < 0) {
+            this.indeks = this.allImages.length -1;
+        }
+        //setting img to caption-container and to column-container opacity
+        setTimeout(() => {
+            //setting img to caption-container and to column-container opacity
+            this.containerImg.src = this.allImages[this.indeks].src;
+            this.containerImg.classList.remove('fadeOut');
+            this.allImages[this.indeks].classList.add('selected')
+        }, 200)
+    }
 }
-export {lightbox};

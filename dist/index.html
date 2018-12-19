@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                     <label class="navigation__mobile">
-                        <input type="checkbox">
+                        <input type="checkbox" id="checkbox">
                         <div class='menu'>
                             <span class='hamburger'></span>
                         </div>
@@ -131,7 +131,7 @@
         </div>
         <div class="main-about-us__counters">
             <div class="container">
-                <div class="counters__row row-5-12">
+                <div class="counters__row row-5-12" id="counters">
                     <div class="counters__col">
                         <h4 class="counters__count">42</h4>
                         <p class="counters__desc">web design projects</p>
@@ -229,14 +229,14 @@
                 <div class="main-what-we-do__col">
                     <img class="first-col__img" src="./images/what-we-do/Bez-nazwy-5.jpg" alt="">
                 </div>
-                <div class="main-what-we-do__col" id="angle-down">
-                    <div class="metier">
+                <div class="main-what-we-do__col" id="whatWeDo">
+                    <div class="metier visible">
                         <div class="metier__banner">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
                             <h5 class="metier__title">photography</h5>
                             <i class="fas fa-angle-down up"></i>
                         </div>
-                        <div class="metier__box-text visible">
+                        <div class="metier__box-text">
                             <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
                                 blanditiis
                                 exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
@@ -255,7 +255,7 @@
                             <h5 class="metier__title">creativity</h5>
                             <i class="fas fa-angle-down"></i>
                         </div>
-                        <div class="metier__box-text hidden">
+                        <div class="metier__box-text">
                             <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
                                 blanditiis
                                 exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
@@ -274,7 +274,7 @@
                             <h5 class="metier__title">web design</h5>
                             <i class="fas fa-angle-down"></i>
                         </div>
-                        <div class="metier__box-text hidden">
+                        <div class="metier__box-text">
                             <p class="metier__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
                                 blanditiis
                                 exercitationem hic inventore molestias odio omnis quam voluptas. Ab aliquam aliquid at
@@ -293,9 +293,9 @@
         <div>
             <div class="container">
                 <div class="main-what-we-do__slider slider">
-                    <button class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button class="slider__prev prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                     <div class="slide-track">
-                        <div class="slide">
+                        <div class="slide isActive">
                             <i class="fa fa-comments" aria-hidden="true"></i>
                             <div class="slide__text-box">
                                 <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -308,8 +308,15 @@
                                 <h6 class="slide__author">John Doe</h6>
                             </div>
                         </div>
+                        <div class="slide visuallyhidden">
+                                <i class="fa fa-comments" aria-hidden="true"></i>
+                                <div class="slide__text-box">
+                                    <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem ut ullam esse aut tempore corrupti adipisci, eligendi eos illo, dignissimos omnis maxime, ad iure!</p>
+                                    <h6 class="slide__author">Adam Małysz</h6>
+                                </div>
+                            </div>
                     </div>
-                    <button class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    <button class="slider__next next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
@@ -441,7 +448,7 @@
                         <div class="photo-hover">
                             <i class="fa fa-picture-o" aria-hidden="true"></i>
                             <h6 class="photo-hover__title">creativly designed</h6>
-                        <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
+                            <p class="photo-hover__text">Lorem ipsum dolor sit.</p>
                         </div>
                     </div>
                 </div>
@@ -474,20 +481,23 @@
         </div>
         <div class="container">
             <div class="main-projects__slider slider">
-                <button class="slider__prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="slider__prev prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                 <div class="slide-track">
                     <div class="slide">
                         <div class="slide__icon"></div>
                         <div class="slide__text-box">
-                            <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, beatae culpa eaque enim
-                                et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero molestias non omnis
-                                provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet, consectetur adipisicing
+                            <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Architecto, beatae culpa eaque enim
+                                et impedit quo sed sit? Ab aliquam, ducimus eius expedita, hic in libero molestias non
+                                omnis
+                                provident quae repellendus soluta, velit?Lorem ipsum dolor sit amet, consectetur
+                                adipisicing
                                 elit. Error, magnam."</p>
                             <h6 class="slide__author">John Doe</h6>
                         </div>
                     </div>
                 </div>
-                <button class="slider__next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                <button class="slider__next next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
             </div>
         </div>
     </section>
@@ -506,7 +516,8 @@
                     <div class="main-clients__text">
                         <h4 class="client__name">Matthew Dix</h4>
                         <h6 class="client__position">Graphic Design</h6>
-                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aperiam delectus dolore iure
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                            aperiam delectus dolore iure
                             maiores quas quisquam, reprehenderit sunt?</p>
                     </div>
                 </div>
@@ -517,7 +528,8 @@
                     <div class="main-clients__text">
                         <h4 class="client__name">Nick Karvounis</h4>
                         <h6 class="client__position">Graphic Design</h6>
-                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque consequatur magni neque
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad atque
+                            consequatur magni neque
                             quae quibusdam quis tempora tempore!</p>
                     </div>
                 </div>
@@ -528,7 +540,8 @@
                     <div class="main-clients__text">
                         <h4 class="client__name">Jaelyyn Castillo</h4>
                         <h6 class="client__position">Graphic Design</h6>
-                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum
+                            delectus distinctio
                             doloribus iusto libero quas ullam voluptatem.</p>
                     </div>
                 </div>
@@ -539,7 +552,8 @@
                     <div class="main-clients__text">
                         <h4 class="client__name">Mike Petrucci</h4>
                         <h6 class="client__position">Graphic Design</h6>
-                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum delectus distinctio
+                        <p class="client__opinion">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad cum
+                            delectus distinctio
                             doloribus iusto libero quas ullam voluptatem.</p>
                     </div>
                 </div>
@@ -636,24 +650,41 @@
             <div class="main-map__row row-4-12">
                 <div class="main-map__col follow-us">
                     <h3 class="follow-us__title">MoGo</h3>
-                    <p class="follow-us__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor excepturi facere fugit inventore
+                    <p class="follow-us__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+                        excepturi facere fugit inventore
                         magni officia quia quis quos sequi vel. Dolores eaque, eius eum hic molestiae molestias
                         repudiandae vero voluptatem. Architecto dolore incidunt ipsum, laborum mollitia numquam
                         quisquam quos saepe.</p>
                     <h5 class="follow-us__followers">
-                        <strong>15k</strong> 
+                        <strong>15k</strong>
                         followers
                     </h5>
                     <div class="follow-us__icons">
                         <h6 class="icons__title">Follow us:</h6>
-                        <a class="follow-us__link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                        <a class="follow-us__link" href="#"><i class="fa fa-tumblr" aria-hidden="true"></i></a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-google-plus" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        </a>
+                        <a class="follow-us__link" href="#">
+                            <i class="fa fa-tumblr" aria-hidden="true"></i>
+                        </a>
                     </div>
                     <form action="" class="main-map__row__col-4-12__form">
                         <label for="email" class="visuallyhidden">Your email</label>
@@ -661,63 +692,75 @@
                         <button>subscribe</button>
                     </form>
                 </div>
-                <div class="main-map__row__col-4-12">
-                    <div class="main-map__col">
-                        <h4 class="col__title footer-blogs__title">blogs</h4>
-                        <div class="main-map__row__col-4-12__cnt__blog">
-                            <div class="main-map__row__col-4-12__cnt__blog-image">
-                                <img src="./images/map/blog1.jpg" alt="">
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
-                            <time>Jan 9 2017</time>
-                        </div>
-                        <div class="main-map__row__col-4-12__cnt__blog">
-                            <div class="main-map__row__col-4-12__cnt__blog-image">
-                                <img src="./images/map/blog2.jpg" alt="">
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
-                            <time>Jan 10 2017</time>
-                        </div>
-                        <div class="main-map__row__col-4-12__cnt__blog">
-                            <div class="main-map__row__col-4-12__cnt__blog-image">
-                                <img src="./images/map/blog3.jpg" alt="">
-                            </div>
-                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
-                            <time>Jan 11 2017</time>
-                        </div>
+
+                <div class="main-map__col footer-blogs">
+                    <h4 class="col__title footer-blogs__title">blogs</h4>
+                    <div class="footer-blogs__item">
+                        <img class="item-blog__image" src="./images/map/blog1.jpg" alt="">
+                        <h5 class="item-blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                        <time class="item-blog__published">Jan 9 2017</time>
+                    </div>
+                    <div class="footer-blogs__item">
+                        <img class="item-blog__image" src="./images/map/blog2.jpg" alt="">
+                        <h5 class="item-blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                        <time class="item-blog__published">Jan 10 2017</time>
+                    </div>
+                    <div class="footer-blogs__item">
+                        <img class="item-blog__image" src="./images/map/blog3.jpg" alt="">
+                        <h5 class="item-blog__title">Lorem ipsum dolor sit amet, consectetur adipisicing.</h5>
+                        <time class="item-blog__published">Jan 11 2017</time>
                     </div>
                 </div>
-                <div class="main-map__row__col-4-12">
-                    <h4 class="col__title">instagram</h4>
-                    <ul class="main-map__row__col-4-12__row-4-12 row-4-12">
-                        <li><img src="./images/map/instagram1.jpeg" alt=""></li>
-                        <li><img src="./images/map/instagram2.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram3.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram4.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram5.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram6.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram7.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram8.jpg" alt=""></li>
-                        <li><img src="./images/map/instagram9.jpg" alt=""></li>
+
+                <div id="lightbox" class="main-map__col lightbox">
+                    <h4 class="col__title lightbox__title">instagram</h4>
+                    <ul class="lightbox__row row-4-12">
+                        <li class="lightbox__item">
+                            <img src="./images/map/instagram1.jpeg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram2.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram3.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram4.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram5.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram6.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram7.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram8.jpg" alt="">
+                        </li>
+                        <li class="lightbox__item">
+                            <img class="lightbox__image" src="./images/map/instagram9.jpg" alt="">
+                        </li>
                     </ul>
                     <div id="myModal" class="modal">
-                        <span class="close cursor">&times;</span>
-                        <div class="modal-content">
-                            <div class="caption-container">
-                                <img src="./images/map/instagram1.jpeg" id="caption">
-                                <a class="prev">&#10094;</a>
-                                <a class="next">&#10095;</a>
+                        <div class="modal__content">
+                            <div class="modal__caption caption-container">
+                                <span class="close cursor">&times;</span>
+                                <img class="containerImg" id="caption">
+                                <a class="modal__prev prev">&#10094;</a>
+                                <a class="modal__next next">&#10095;</a>
                             </div>
-                            <div class="column-container">
-                                <img src="./images/map/instagram1.jpeg" alt="">
-                                <img src="./images/map/instagram2.jpg" alt="">
-                                <img src="./images/map/instagram3.jpg" alt="">
-                                <img src="./images/map/instagram4.jpg" alt="">
-                                <img src="./images/map/instagram5.jpg" alt="">
-                                <img src="./images/map/instagram6.jpg" alt="">
-                                <img src="./images/map/instagram7.jpg" alt="">
-                                <img src="./images/map/instagram8.jpg" alt="">
-                                <img src="./images/map/instagram9.jpg" alt="">
+                            <div class="column-container slide-track">
+                                <img class="column__image" src="./images/map/instagram1.jpeg" alt="">
+                                <img class="column__image" src="./images/map/instagram2.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram3.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram4.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram5.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram6.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram7.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram8.jpg" alt="">
+                                <img class="column__image" src="./images/map/instagram9.jpg" alt="">
                             </div>
                         </div>
                     </div>

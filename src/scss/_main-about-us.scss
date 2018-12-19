@@ -1,3 +1,4 @@
+
 .main-about-us__col{
   height: 255px;
   width: 100%;
@@ -9,21 +10,33 @@
   }
 }
 
+.main-about-us__counters > .container {
+  @media (max-width: 500px) {
+    max-width: unset;
+  }
+}
 
+.main-about-us__img{
+  height: 100%;
+}
 
 .main-about-us__col:hover .main-about-us__photo-hover {
   opacity: 1;
 
 }
-.main-about-us__img{
-  height: 100%;
-}
 
 .main-about-us__counters {
   background-color: $shadowColor;
 }
+.counters__row {
+  grid-gap: 0;
+}
 .counters__col {
   color: $onGradientColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   text-align: center;
   border-left: 0.5px solid $onGradientColor;
   font-family: $headerFont;
@@ -35,11 +48,17 @@
     @media (max-width: 500px) {
       border-right: none;
     }
+  
   }
 
   @media (max-width: 500px) {
     padding: 10px 0;
     border-left: none;
+    border-bottom: 0.5px solid $onGradientColor;
+    
+    &:last-of-type {
+      border-bottom: 0;
+    }
   }
 }
 .counters__count {
