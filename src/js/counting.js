@@ -1,23 +1,23 @@
 const wrapper = document.querySelector('#counters');
-  const options = {
-    root: null,
-    treshold: 1.3,
+const options = {
+  root: null,
+  treshold: 1.3,
+}
+const counters = document.querySelectorAll('.counters__count');
+let isScrolled = false;
+function counter(element) {
+  const counterValue = element.innerText;
+  const intervalTiming = 3300 / Number(element.innerText) 
+  
+  let count = 0
+  const interval = setInterval(() => {
+  if(count >= counterValue) {
+      clearInterval(interval)
+  } else {
+      count++
+      element.innerText = count
   }
-  const counters = document.querySelectorAll('.counters__count');
-  let isScrolled = false;
-  function counter(element) {
-    const counterValue = element.innerText;
-    const intervalTiming = 3300 / Number(element.innerText) 
-    
-    let count = 0
-    const interval = setInterval(() => {
-    if(count >= counterValue) {
-        clearInterval(interval)
-    } else {
-        count++
-        element.innerText = count
-    }
-    }, intervalTiming);
+  }, intervalTiming);
 }
   
 export default function counting() {

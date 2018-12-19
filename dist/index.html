@@ -13,6 +13,9 @@
 </head>
 
 <body>
+    <div class="loading">
+        <div class="loading-spinner"></div>
+    </div>
     <section class="main-page" id="main-page">
         <div class="container">
             <header class="navigation">
@@ -96,7 +99,7 @@
         </div>
     </section>
     <!-- end main-page -->
-    <section class="main-about-us" id="about-us">
+    <section class="main-about-us slide-from-left" id="about-us">
         <div class="container">
             <header class="header">
                 <h3 class="header__title">What we do</h3>
@@ -157,7 +160,7 @@
         </div>
     </section>
     <!-- end main-about-us -->
-    <section class="main-services">
+    <section class="main-services slide-from-left">
         <div class="container">
             <header class="header">
                 <h3 class="header__title">We work with</h3>
@@ -199,7 +202,7 @@
         </div>
     </section>
     <!-- end main-services -->
-    <section class="main-design">
+    <section class="main-design slide-from-left">
         <div class="container">
             <header class="header">
                 <h3 class="header__title">For all devices</h3>
@@ -309,12 +312,14 @@
                             </div>
                         </div>
                         <div class="slide visuallyhidden">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                                <div class="slide__text-box">
-                                    <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia rem ut ullam esse aut tempore corrupti adipisci, eligendi eos illo, dignissimos omnis maxime, ad iure!</p>
-                                    <h6 class="slide__author">Adam Małysz</h6>
-                                </div>
+                            <i class="fa fa-comments" aria-hidden="true"></i>
+                            <div class="slide__text-box">
+                                <p class="slide__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                                    rem ut ullam esse aut tempore corrupti adipisci, eligendi eos illo, dignissimos
+                                    omnis maxime, ad iure!</p>
+                                <h6 class="slide__author">Adam Małysz</h6>
                             </div>
+                        </div>
                     </div>
                     <button class="slider__next next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
                 </div>
@@ -483,7 +488,7 @@
             <div class="main-projects__slider slider">
                 <button class="slider__prev prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
                 <div class="slide-track">
-                    <div class="slide">
+                    <div class="slide isActive">
                         <div class="slide__icon"></div>
                         <div class="slide__text-box">
                             <p class="slide__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -494,6 +499,13 @@
                                 adipisicing
                                 elit. Error, magnam."</p>
                             <h6 class="slide__author">John Doe</h6>
+                        </div>
+                    </div>
+                    <div class="slide visuallyhidden">
+                        <div class="slide__icon"></div>
+                        <div class="slide__text-box">
+                            <p class="slide__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure harum ipsum, hic vero ipsa dolorem tempora nemo dolore voluptates expedita dignissimos itaque facilis commodi, aliquam ratione tempore esse quo distinctio id sunt dicta amet ad! Totam sit laboriosam nulla necessitatibus possimus architecto laudantium voluptas maxime molestiae, doloribus ipsa odit eius consequuntur consequatur eum quisquam veniam corporis dolor distinctio minima dignissimos!</p>
+                            <h6 class="slide__author">Lorem Loremus</h6>
                         </div>
                     </div>
                 </div>

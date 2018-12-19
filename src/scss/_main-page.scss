@@ -4,5 +4,15 @@
   url("./../images/main-page/eagle.jpg");
   background-size: cover;
   background-position: center center;
-  
+}
+
+.slide-from-left {
+  opacity: 0;
+  transition: 1s 0.2s transform, 0.8s opacity;
+  transform: translate(-300px, 0);
+}
+
+.slide-from-left.inView {
+  opacity: 1;
+  transform: translate(0);
 }

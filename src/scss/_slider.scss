@@ -1,5 +1,5 @@
 .slider {
-  
+  height: 150px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -9,7 +9,7 @@
 
 
 .slide__icon {
-  width: 220px;
+  min-width: 120px;
   height: 120px;
   background-image: url("../images/our-projects/Bez-nazwy-1.jpg");
   background-position: center center;
