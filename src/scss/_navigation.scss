@@ -1,14 +1,8 @@
-
-.navigation {
-  position: fixed;
+.navigation__wrapper {
   display: flex;
   justify-content: space-between;
-  padding:20px 0;
-  top:0;
-  left: 50%;
-  transform: translateX(-50%);
+  padding: 20px 0;
   width: 100%;
-  z-index:1;
   transition: .7s all;
 }
 
@@ -16,30 +10,31 @@
 .navigation__nav {
   margin-right: 4%;
 }
+
 .logo__link,
-.navigation__link{
+.navigation__link {
   @include stylingLinks;
 }
+
 .logo__link {
   font-family: $headerFont;
   font-weight: bold;
-  font-size:30px;
+  font-size: 30px;
   text-transform: none;
-  position: absolute;
-  left: 5%;
-  z-index: 210;
 }
+
 .navigation__list {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(7, 1fr);
-  padding-top:15px;
+  grid-template-columns: repeat(4, 1fr);
+  padding-top: 15px;
   text-align: center;
 
   @media (max-width: 900px) {
     display: none;
   }
 }
+
 .navigation__link {
   position: relative;
   transition: 0.5s all;
@@ -63,19 +58,30 @@
 }
 
 @keyframes slideToLeft {
-  0% {transform: translateY(-150px)};
-  100% {transform: translateY(0)};
+  0% {
+    transform: translateY(-150px)
+  }
+
+  100% {
+    transform: translateY(0)
+  }
 }
 
 .sticky {
   background: #f38181;
   opacity: 0.9;
-  height: 30px;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
 }
 
 /* hamburger */
 .navigation__mobile {
   display: none;
+
   .menu {
     position: absolute;
     right: 5%;
@@ -85,6 +91,7 @@
     transition: .5s ease-in-out;
     cursor: pointer;
   }
+
   .hamburger {
     position: absolute;
     top: 50%;
@@ -95,6 +102,7 @@
     display: block;
     transform-origin: center;
     transition: .5s ease-in-out;
+
     &:after,
     &:before {
       transition: .5s ease-in-out;
@@ -105,25 +113,32 @@
       height: 100%;
       background: #fff;
     }
+
     &:before {
       top: -10px;
     }
+
     &:after {
       bottom: -10px;
     }
   }
+
   input {
     display: none;
   }
-  input:checked + .menu {
+
+  input:checked+.menu {
     box-shadow: 0 0 0 100vw #f38181, 0 0 0 150vh #f38181;
     border-radius: 0;
+
     .hamburger {
       transform: rotate(45deg);
+
       &:after {
         transform: rotate(90deg);
         bottom: 0;
       }
+
       &:before {
         transform: rotate(90deg);
         top: 0;
@@ -131,7 +146,7 @@
     }
   }
 
-  input:checked + .menu + ul {
+  input:checked+.menu+ul {
     opacity: 1;
     display: block;
   }
@@ -142,7 +157,7 @@
     top: 100%;
     left: 47%;
     opacity: 0;
-    display:none;
+    display: none;
     transition: .5s 0s ease-in-out;
     text-align: center;
   }
@@ -151,9 +166,8 @@
     @include stylingLinks;
     padding: 1em;
   }
-  
+
   @media (max-width: 900px) {
     display: block;
   }
 }
-

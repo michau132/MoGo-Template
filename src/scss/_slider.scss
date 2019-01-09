@@ -4,8 +4,17 @@
   justify-content: space-around;
   align-items: center;
   overflow: hidden;
+  
+  @media (max-width: $smallDevices) {
+    height: 450px;
+    
+  }
 }
-
+@media (max-width: $smallDevices) {
+  .main-what-we-do__slider {
+    height: 250px;
+  }
+}
 
 
 .slide__icon {
@@ -17,32 +26,21 @@
   border-radius: 50%;
   overflow: hidden;
   margin-left: 15px;
-  
+
   @media (max-width: $smallDevices) {
     margin-bottom: 20px;
   }
 }
 
 
-.main-what-we-do__slider {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 120px;
-
-  @media (max-width: $smallDevices) {
-    height: 180px;
-  }
-}
-
-.slider__prev, 
+.slider__prev,
 .slider__next {
   height: 100%;
   cursor: pointer;
   background: none;
   border: none;
   padding: 40px 15px;
-  
+
   @media (max-width: $extraSmallDevices) {
     padding: 40px 10px;
   }
@@ -51,26 +49,29 @@
     outline: none;
   }
 }
-.slider__prev, 
-.slider__next > .fa {
+
+.slider__prev,
+.slider__next>.fa {
   color: $textColor;
 }
+
 .slide {
   display: flex;
   align-items: center;
   height: 100%;
   transition: 1s all;
-  
+
   @media (max-width: $smallDevices) {
     flex-direction: column;
   }
 }
+
 .slide.isActive {
   opacity: 1;
 }
 
 
-.slide > .fa-comments {
+.slide>.fa-comments {
   color: $shadowColor;
   font-size: 70px;
   padding: 0 30px;
@@ -83,6 +84,7 @@
     padding: 0;
   }
 }
+
 .slide__text-box {
   padding-right: 60px;
   padding-left: 10px;
@@ -94,18 +96,20 @@
   @media (max-width: $mediumDevices) {
     padding-right: 30px;
   }
-  
+
   @media (max-width: $smallDevices) {
     padding-right: 10px;
     padding-left: 0;
   }
 }
+
 .slide__text {
   font-family: $textFont;
   color: $textColor;
   font-style: italic;
   padding-bottom: 10px;
 }
+
 .slide__author {
   font-family: $titleFont;
   font-size: 20px;
