@@ -47,7 +47,7 @@ export default class Lightbox {
         this.modal.classList.remove('isOpen');
         this.allImages[this.indeks].classList.remove('selected');
         //giving to navbar and button position fixed to show it
-        this.navSticky.style.position = "fixed";
+        this.navSticky.style.position = "";
         this.scrollBtn.style.position = "fixed";
         this.bodyStyle.style.overflow = "auto";
     }
